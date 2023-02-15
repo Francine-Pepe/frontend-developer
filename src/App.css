@@ -1,15 +1,24 @@
-h1, h2, h3, h4, h5, a {
-    font-family: 'Lato', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
 }
 
+a {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+}
 p {
-    font-family: 'Roboto Slab', serif;
+  font-family: "Roboto Slab", serif;
 }
 
 body {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 a:hover {
-    color: #DC7883;
+  color: #dc7883;
 }
