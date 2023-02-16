@@ -23,18 +23,12 @@ export default function GridImages() {
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 4, sm: 8, md: 12 }}
         className={styles.image_container}
+        justifyContent= "center"
       >
         {carouselImages.map((data, index) => (
           <Grid xs={2} sm={3} md={4} key={index}>
-            <Button
-              className={styles.about_button}
-              sx={{
-                "&:focus": {
-                  outlineColor: "none",
-                },
-              }}
-            >
-              <Item>
+            <Button className={styles.about_button}>
+              <Item className={styles.image_container}>
                 <img
                   src={data.image}
                   srcSet={data.image}
