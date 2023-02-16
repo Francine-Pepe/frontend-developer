@@ -14,6 +14,8 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
+        {/* <About /> */}
+        {/* <Projects /> */}
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/projects" element={<Projects />} />
@@ -27,3 +29,5 @@ function App() {
 }
 
 export default App;
+
+
