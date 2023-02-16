@@ -5,6 +5,7 @@ h4,
 h5 {
   font-family: "Lato", sans-serif;
   font-weight: 100;
+  
 }
 
 a {
@@ -21,4 +22,16 @@ body {
 
 a:hover {
   color: #dc7883;
+}
+
+h1 {
+  font-size: 5rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+a {
+  text-decoration: none;
 }
