@@ -2,12 +2,14 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { nav } from "../../data";
 import styles from "./Navbar.module.css";
-import Logo from "../../Assets/Logo_FrancinePepe.png";
+// import Logo from "../../Assets/Logo_FrancinePepe.png";
+import Logo from "../../Assets/Logo_brighter_black.png";
+
 
 function Navbar() {
   return (
     <div className={styles.navbar_container}>
-      <NavLink to={"/about"} className={styles.logo_link}>
+      <NavLink to={"/"} className={styles.logo_link}>
         <img src={Logo} alt={"Logo"} className={styles.logo} />
       </NavLink>
       <ul className={styles.navbar_parent}>
