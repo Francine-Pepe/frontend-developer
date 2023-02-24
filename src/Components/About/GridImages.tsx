@@ -3,9 +3,11 @@ import { experimentalStyled as styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Unstable_Grid2";
-import { Button } from "@mui/material";
 import styles from "./About.module.css";
-import { carouselImages } from "../../data";
+import { useState, useCallback } from "react";
+import { render } from "react-dom";
+import ImageViewer from "react-simple-image-viewer";
+import { carouselImages, ModalImages, ModalCaption } from "../../data";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -16,6 +18,22 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function GridImages() {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
+
+  const images = ModalImages;
+  const caption = ModalCaption;
+
+  const openImageViewer = useCallback((index: React.SetStateAction<number>) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+  }, []);
+
+  const closeImageViewer = () => {
+    setCurrentImage(0);
+    setIsViewerOpen(false);
+  };
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid
@@ -23,34 +41,38 @@ export default function GridImages() {
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 4, sm: 8, md: 12 }}
         className={styles.image_container}
+        justifyContent="center"
       >
         {carouselImages.map((data, index) => (
           <Grid xs={2} sm={3} md={4} key={index}>
-            <Button
-              className={styles.about_button}
-              sx={{
-                "&:focus": {
-                  outlineColor: "none",
-                },
-              }}
-            >
-              <Item>
-                <img
-                  src={data.image}
-                  srcSet={data.image}
-                  alt={data.name}
-                  loading="lazy"
-                  className={styles.image}
-                />
-                <div className={styles.middle}>
-                  <div className={styles.text}>
-                    <p>{data.about}</p>
-                  </div>
+            <Item className={styles.image_container}>
+              <img
+                srcSet={data.image}
+                alt={data.name}
+                loading="lazy"
+                className={styles.image}
+                onClick={() => openImageViewer(index)}
+              />
+              <div className={styles.middle}>
+                <div className={styles.text}>
+                  <p>{data.about}</p>
                 </div>
-              </Item>
-            </Button>
+              </div>
+            </Item>
           </Grid>
         ))}
+        {isViewerOpen && (
+          <>
+            <ImageViewer
+              src={images}
+              currentIndex={currentImage}
+              disableScroll={false}
+              closeOnClickOutside={true}
+              onClose={closeImageViewer}
+            />
+            <h5>{caption}</h5>
+          </>
+        )}
       </Grid>
     </Box>
   );
