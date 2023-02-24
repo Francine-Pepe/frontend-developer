@@ -10,7 +10,6 @@
 .about_text_box {
   width: 50vw;
   height: auto;
-  /* border: 1px red solid; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,6 +38,7 @@
   transition: 0.5s ease;
   backface-visibility: hidden;
   transition: transform 0.2s;
+  cursor: pointer;
 }
 
 .middle {
@@ -50,10 +50,6 @@
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-}
-
-.about_button:hover {
-  background-color: transparent;
 }
 
 .about_button:hover .image {
@@ -70,24 +66,16 @@
   padding: 16px 32px;
 }
 
-img {
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-}
-
-.image_container {
-  overflow: hidden;
-}
-
 /* Media queries */
 
 @media screen and (max-width: 1200px) {
   .about_container {
     flex-wrap: wrap-reverse;
     padding-top: 0;
+  }
+
+  .about_container h1 {
+    padding-top: 3rem;
   }
 
   .caroussel_box,
