@@ -10,11 +10,20 @@ import Project3 from "./Assets/03.Easybank.png";
 import Project4 from "./Assets/04.Sunnyside.png";
 import Project5 from "./Assets/05.TodoList.png";
 import Project6 from "./Assets/06.BespokeFashion.png";
+import FreshFruit01 from "./Assets/FreshFruit/freshFruit01.png";
+import FreshFruit02 from "./Assets/FreshFruit/freshFruit02.png";
+import FreshFruit03 from "./Assets/FreshFruit/freshFruit03.png";
+import FreshFruit04 from "./Assets/FreshFruit/freshFruit04.png";
+import FreshFruit05 from "./Assets/FreshFruit/freshFruit05.png";
+import FreshFruit06 from "./Assets/FreshFruit/freshFruit06.png";
+import FreshFruit07 from "./Assets/FreshFruit/freshFruit07.png";
+import FreshFruit08 from "./Assets/FreshFruit/freshFruit08.png";
+import FreshFruit09 from "./Assets/FreshFruit/freshFruit09.png";
 
 export const nav = [
   {
     name: "about",
-    link: "/about",
+    link: "/",
     id: 0,
   },
   {
@@ -91,25 +100,25 @@ export const ProjectsDataLeft = [
     id: 1,
     image: Project1,
     name: "Fresh Fruit at your door",
+    route: "/project/freshfruit",
     visit: "https://francine-pepe.github.io/fresh-fruit-at-your-door/",
     repo: "https://github.com/Francine-Pepe/fresh-fruit-at-your-door",
-    route: "/freshfruit",
   },
   {
     id: 2,
     image: Project2,
     name: "Bookmark",
-    visit: "https://francine-pepe.github.io/fresh-fruit-at-your-door/",
-    repo: "https://github.com/Francine-Pepe/fresh-fruit-at-your-door",
-    route: "/bookmark"
+    route: "/bookmark",
+    visit: "https://francine-pepe.github.io/bookmark/",
+    repo: "https://github.com/Francine-Pepe/bookmark",
   },
   {
     id: 3,
     image: Project3,
     name: "Easybank",
-    visit: "https://francine-pepe.github.io/fresh-fruit-at-your-door/",
-    repo: "https://github.com/Francine-Pepe/fresh-fruit-at-your-door",
-    route: "/easybank"
+    route: "/easybank",
+    visit: "https://francine-pepe.github.io/easybank/",
+    repo: "https://github.com/Francine-Pepe/easybank",
   },
 ];
 
@@ -118,24 +127,74 @@ export const ProjectsDataRight = [
     id: 4,
     image: Project4,
     name: "Sunnyside",
-    visit: "https://francine-pepe.github.io/fresh-fruit-at-your-door/",
-    repo: "https://github.com/Francine-Pepe/fresh-fruit-at-your-door",
     route: "/sunnyside",
+    visit: "https://francine-pepe.github.io/sunnyside/",
+    repo: "https://github.com/Francine-Pepe/sunnyside",
   },
   {
     id: 5,
     image: Project5,
     name: "Todo List",
-    visit: "https://francine-pepe.github.io/fresh-fruit-at-your-door/",
-    repo: "https://github.com/Francine-Pepe/fresh-fruit-at-your-door",
-    route: "/todolist"
+    route: "/todolist",
+    visit: "https://francine-pepe.github.io/todo/",
+    repo: "https://github.com/Francine-Pepe/todo",
   },
   {
     id: 6,
     image: Project6,
     name: "Besboke Fashion",
-    visit: "https://francine-pepe.github.io/fresh-fruit-at-your-door/",
-    repo: "https://github.com/Francine-Pepe/fresh-fruit-at-your-door",
-    route: "/bespokefashion"
+    route: "/bespokefashion",
+    visit: "https://bespokefashion.netlify.app/",
+    repo: "https://github.com/Francine-Pepe/bespokefashion",
   },
 ];
+
+export const ProjectPage = [
+  {
+    image: FreshFruit01
+  },
+  {
+    image: FreshFruit02
+  },
+  {
+    image: FreshFruit03
+  },
+  {
+    image: FreshFruit04
+  },
+  {
+    image: FreshFruit05
+  },
+  {
+    image: FreshFruit06
+  },
+  {
+    image: FreshFruit07
+  },
+  {
+    image: FreshFruit08
+  },
+  {
+    image: FreshFruit09
+  },
+];
+
+export const Buttons = [
+  {
+    buttonLink: "Live demo",
+    buttonRepo: "Repo",
+  }
+]
+
+export const ModalImages = [
+  Photo1, Photo2, Photo3, Photo4, Photo5, Photo6
+]
+
+export const ModalCaption = [
+  "When not coding, I am probably photographing somewhere or someone",
+  "Summer day? Probably. :)",
+  "This is Malia. My code mate.",
+  "And model too.",
+  "A bit of my workspace.",
+  "Colors and flowers. Yes, I do love.",
+]
