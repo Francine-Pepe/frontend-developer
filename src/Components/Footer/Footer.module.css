@@ -1,0 +1,29 @@
+.footer_main_container {
+    width: 100%;
+    height: auto;
+    background: #f8f8f8;
+    border-top: solid #bdbdbd 0;
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+    padding: 2rem 0;
+    
+}
+
+.footer_social_icons_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 100vw;
+}
+
+small {
+    font-family: "Lato", sans-serif;
+
+}
