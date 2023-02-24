@@ -1,16 +1,5 @@
-import React, { ReactNode } from "react";
 import styles from "./Projects.module.css";
 import { ProjectsDataLeft, ProjectsDataRight } from "../../data";
-import { NavLink } from "react-router-dom";
-import { Button } from "@mui/material";
-
-interface ProjectsTypes {
-  id: number;
-  image: string;
-  name: string;
-  visit: string;
-  repo: string;
-}
 
 function Projects() {
   return (
@@ -25,14 +14,28 @@ function Projects() {
           <div className={styles.projects_left}>
             {ProjectsDataLeft.map((data, index) => {
               return (
-                <div className={styles.project_image_container_left}>
-                  <h4>{data.name}</h4>
-                  <NavLink to={data.route}>
-                    <img src={data.image} alt={data.name} key={data.id} />
-                  </NavLink>
-                  <a href={data.visit} target="_blank" rel="noreferrer">
-                    <button>Visit</button>
-                  </a>
+                <div
+                  className={styles.project_image_container_left}
+                  key={index}
+                >
+                  <h3>{data.name}</h3>
+                  <button>
+                    <img
+                      src={data.image}
+                      alt={data.name}
+                      key={data.id}
+                      className={styles.image}
+                    />
+                  </button>
+
+                  <div className={styles.buttons_container}>
+                    <a href={data.visit} target="_blank" rel="noreferrer">
+                      <button>Live demo</button>
+                    </a>
+                    <a href={data.repo} target="_blank" rel="noreferrer">
+                      <button>Repo</button>
+                    </a>
+                  </div>
                   <hr />
                 </div>
               );
@@ -42,14 +45,18 @@ function Projects() {
             {ProjectsDataRight.map((data, index) => {
               return (
                 <div className={styles.project_image_container_right}>
-                  <h4>{data.name}</h4>
-                  <NavLink to={data.route}>
+                  <h3>{data.name}</h3>
+                  <button>
                     <img src={data.image} alt={data.name} key={data.id} />
-                  </NavLink>
-                  <a href={data.visit} target="_blank" rel="noreferrer">
-                    <button>Visit</button>
-                  </a>
-
+                  </button>
+                  <div className={styles.buttons_container}>
+                    <a href={data.visit} target="_blank" rel="noreferrer">
+                      <button>Live demo</button>
+                    </a>
+                    <a href={data.repo} target="_blank" rel="noreferrer">
+                      <button>Repo</button>
+                    </a>
+                  </div>
                   <hr />
                 </div>
               );
