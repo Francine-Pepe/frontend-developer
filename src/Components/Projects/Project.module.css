@@ -1,0 +1,9 @@
+.single_project_container {
+    width: 100vw;
+    height: auto;
+    padding: 2rem;
+}
+
+.single_project_container img {
+    width: 50rem;
+}
