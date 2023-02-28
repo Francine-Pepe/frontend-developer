@@ -3,7 +3,7 @@
   height: auto;
   display: flex;
   overflow-x: hidden;
-  padding-top: 7.5rem;
+  padding-top: 6rem;
 }
 
 .caroussel_box,
@@ -39,6 +39,23 @@
   backface-visibility: hidden;
   transition: transform 0.2s;
   cursor: pointer;
+  border-radius: 3px;
+}
+
+.grid_image_container {
+  background:
+    linear-gradient(to right, black 4px, transparent 4px) 0 0,
+    linear-gradient(to right, black 4px, transparent 4px) 0 100%,
+    linear-gradient(to left, black 4px, transparent 4px) 100% 0,
+    linear-gradient(to left, black 4px, transparent 4px) 100% 100%,
+    linear-gradient(to bottom, black 4px, transparent 4px) 0 0,
+    linear-gradient(to bottom, black 4px, transparent 4px) 100% 0,
+    linear-gradient(to top, black 4px, transparent 4px) 0 100%,
+    linear-gradient(to top, black 4px, transparent 4px) 100% 100%;
+
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  
 }
 
 .middle {
@@ -67,6 +84,13 @@
 }
 
 /* Media queries */
+
+@media screen and (min-width: 1800px) {
+  .about_container {
+    padding-top: 7.3rem;
+  }
+  
+}
 
 @media screen and (max-width: 1200px) {
   .about_container {
