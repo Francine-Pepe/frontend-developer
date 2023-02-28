@@ -103,6 +103,7 @@ export const ProjectsDataLeft = [
     route: "/project/freshfruit",
     visit: "https://francine-pepe.github.io/fresh-fruit-at-your-door/",
     repo: "https://github.com/Francine-Pepe/fresh-fruit-at-your-door",
+    description: "Fresh Fruit is a company that deliver Fruit monthly or weekly directly at your door. The main feature from this website is to update the shopping cart and filter the fruits by season"
   },
   {
     id: 2,
@@ -111,6 +112,7 @@ export const ProjectsDataLeft = [
     route: "/bookmark",
     visit: "https://francine-pepe.github.io/bookmark/",
     repo: "https://github.com/Francine-Pepe/bookmark",
+    description: "Bookmark is a code chalenge developed by: frontendmentor.io"
   },
   {
     id: 3,
