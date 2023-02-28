@@ -7,14 +7,15 @@ import styles from "./About.module.css";
 import { useState, useCallback } from "react";
 import { render } from "react-dom";
 import ImageViewer from "react-simple-image-viewer";
-import { carouselImages, ModalImages, ModalCaption } from "../../data";
+import { carouselImages, ModalImages } from "../../data";
 
 const Item = styled(Paper)(({ theme }) => ({
-  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
+  backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "transparent",
   ...theme.typography.body2,
-  padding: theme.spacing(0.5),
+  // padding: theme.spacing(0.5),
   textAlign: "center",
   color: theme.palette.text.secondary,
+  
 }));
 
 export default function GridImages() {
@@ -22,7 +23,6 @@ export default function GridImages() {
   const [isViewerOpen, setIsViewerOpen] = useState(false);
 
   const images = ModalImages;
-  const caption = ModalCaption;
 
   const openImageViewer = useCallback((index: React.SetStateAction<number>) => {
     setCurrentImage(index);
@@ -40,11 +40,11 @@ export default function GridImages() {
         container
         spacing={{ xs: 2, md: 3 }}
         columns={{ xs: 4, sm: 8, md: 12 }}
-        className={styles.image_container}
+        className={styles.grid_image_container}
         justifyContent="center"
       >
         {carouselImages.map((data, index) => (
-          <Grid xs={2} sm={3} md={4} key={index}>
+          <Grid xs={2} sm={4} md={4} key={index}>
             <Item className={styles.image_container}>
               <img
                 srcSet={data.image}
@@ -70,7 +70,7 @@ export default function GridImages() {
               closeOnClickOutside={true}
               onClose={closeImageViewer}
             />
-            <h5>{caption}</h5>
+            {/* <h5>{caption}</h5> */}
           </>
         )}
       </Grid>
