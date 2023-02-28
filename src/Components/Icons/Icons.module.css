@@ -21,3 +21,7 @@
   filter: invert(45%) sepia(2%) saturate(4%) hue-rotate(12deg) brightness(96%)
     contrast(86%);
 }
+
+.button:hover {
+  cursor: pointer;
+}
