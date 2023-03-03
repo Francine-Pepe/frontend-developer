@@ -3,7 +3,6 @@ import { Icon } from "@iconify/react";
 
 function Hambuger() {
   return (
-    <div>
       <button>
         <Icon
           icon="charm:menu-hamburger"
@@ -12,7 +11,6 @@ function Hambuger() {
           height="24"
         />
       </button>
-    </div>
   );
 }
 
