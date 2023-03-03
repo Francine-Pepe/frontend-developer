@@ -29,14 +29,15 @@ export default function NavbarMobile() {
         aria-haspopup="true"
         onClick={handleClick}
       >
-        {open ? <CloseButton /> : <Hambuger /> }
+        {open ? <CloseButton /> : <Hambuger />}
       </IconButton>
+
       <Menu
-      className={styles.mui_menu}
+        className={styles.mui_menu}
         id="long-menu"
         MenuListProps={{
           "aria-labelledby": "long-button",
-          disablePadding: true
+          disablePadding: true,
         }}
         anchorEl={anchorEl}
         open={open}

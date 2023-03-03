@@ -1,0 +1,86 @@
+.skills_container {
+  width: 30vw;
+  height: auto;
+  display: flex;
+}
+
+.skills_main {
+  padding: 8rem 1rem 2rem 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.skills_image {
+  width: 7vw;
+}
+
+.skills_progressBar {
+  width: 100vw;
+}
+
+.skills {
+  width: 30vw;
+  height: auto;
+  background: #f8f8f8;
+  border: solid #bdbdbd 0;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
+  margin: 0.5rem auto;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+h2 {
+  text-align: center;
+}
+
+.hidden {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.8s ease-in;
+  background-color: #f8f8f8;
+}
+
+.skills_container {
+  position: relative;
+  width: 100%;
+}
+
+.skills_name {
+  color: #707070;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-family: "Agency FB";
+}
+
+.skills_container:hover .hidden {
+  opacity: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .skills_main {
+    flex-direction: column;
+    padding: 6rem 1rem 2rem 1rem;
+  }
+
+  .skills,
+  .skills_container {
+    width: 90vw;
+    align-self: center;
+  }
+}

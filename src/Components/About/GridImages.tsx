@@ -12,7 +12,6 @@ import { carouselImages, ModalImages } from "../../data";
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "transparent",
   ...theme.typography.body2,
-  // padding: theme.spacing(0.5),
   textAlign: "center",
   color: theme.palette.text.secondary,
   
@@ -70,7 +69,6 @@ export default function GridImages() {
               closeOnClickOutside={true}
               onClose={closeImageViewer}
             />
-            {/* <h5>{caption}</h5> */}
           </>
         )}
       </Grid>
