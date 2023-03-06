@@ -59,6 +59,11 @@ button {
   margin: 0 auto;
 }
 
+li a:focus {
+  color: #C92C6D;
+}
+
+
 /* Media queries */
 
 @media screen and (max-width: 900px) {

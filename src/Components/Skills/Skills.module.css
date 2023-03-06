@@ -5,7 +5,7 @@
 }
 
 .skills_main {
-  padding: 8rem 1rem 2rem 1rem;
+  padding: 4rem;
   display: flex;
   justify-content: center;
 }
@@ -19,7 +19,7 @@
 }
 
 .skills {
-  width: 30vw;
+  width: 50vw;
   height: auto;
   background: #f8f8f8;
   border: solid #bdbdbd 0;
@@ -30,11 +30,13 @@
   flex-direction: column;
   margin: 0.5rem auto;
   border-radius: 5px;
-  padding: 0.5rem;
+  padding: 0.5rem 1rem;
 }
 
-h2 {
+.skills_name h3 {
   text-align: center;
+  font-family: "Agency FB";
+  font-weight: 100;
 }
 
 .hidden {
@@ -65,22 +67,88 @@ h2 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
-  font-family: "Agency FB";
 }
 
 .skills_container:hover .hidden {
   opacity: 1;
 }
 
-@media screen and (max-width: 800px) {
+/* SkillsTabs CSS */
+
+.tab_list {
+  text-align: center;
+  font-family: "Agency FB";
+  font-size: 1.5rem;
+  border: none;
+  margin: 0 0 10px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  height: auto;
+}
+
+/* .tab {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-bottom: none;
+  bottom: -1px;
+  position: relative;
+  list-style: none;
+  padding: 6px 12px;
+  cursor: pointer;
+} */
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  bottom: -1px;
+  padding: 1rem;
+  cursor: pointer;
+  margin-top: 3rem;
+}
+
+.tab:focus {
+  outline: none;
+  color: #c92c6d;
+}
+
+.tab--selected {
+  border: none;
+}
+
+@media screen and (max-width: 1235px) {
   .skills_main {
+    padding: 4rem 3rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .tab_list {
+    display: flex;
     flex-direction: column;
-    padding: 6rem 1rem 2rem 1rem;
+    margin-top: -3rem;
+    justify-content: center;
+    height: auto;
   }
 
-  .skills,
-  .skills_container {
-    width: 90vw;
-    align-self: center;
+  .tab {
+    margin-top: 3rem;
+    padding: 0;
+  }
+
+  .tab--selected {
+    border: 1px solid transparent;
+  }
+
+  .skills {
+    width: 70vw;
+  }
+
+  .skills_main {
+    padding: 3.5rem 0 2rem 0;
+    display: flex;
+    justify-content: center;
   }
 }

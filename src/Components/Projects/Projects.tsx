@@ -1,10 +1,11 @@
 import styles from "./Projects.module.css";
 import { ProjectsDataLeft, ProjectsDataRight } from "../../data";
-import ProjectAnimation from "../Animations/ProjectAnimation";
+import Animation from "../Animations/Animation";
 import Modal from "@mui/material/Modal";
 import Box from "@mui/material/Box";
 import React, { useState } from "react";
 import Typography from "@mui/material/Typography";
+import "../../App.css";
 
 const style = {
   position: "absolute" as "absolute",
@@ -24,12 +25,16 @@ function Projects() {
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
 
+  const text = {
+    text: "Bellow you can see a bit of my work:",
+  };
+
   return (
     <>
       <main className={styles.project_main_container}>
         <section className={styles.project_transition_box}>
-          <div className={styles.project_title}>
-            <ProjectAnimation />
+          <div className="animation">
+            <Animation text={text.text} />
           </div>
         </section>
         <section className={styles.projects_container}>
@@ -56,7 +61,7 @@ function Projects() {
                     >
                       <Box sx={style}>
                         <Typography id="modal-modal-description" sx={{ mt: 2 }}>
-                          {data.description}
+                          {/* {descriptions.description} */}
                         </Typography>
                       </Box>
                     </Modal>

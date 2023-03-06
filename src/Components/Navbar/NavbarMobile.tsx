@@ -49,6 +49,7 @@ export default function NavbarMobile() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
+            marginTop: "1rem"
           },
         }}
       >
