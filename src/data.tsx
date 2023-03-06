@@ -20,6 +20,9 @@ import FreshFruit07 from "./Assets/FreshFruit/freshFruit07.png";
 import FreshFruit08 from "./Assets/FreshFruit/freshFruit08.png";
 import FreshFruit09 from "./Assets/FreshFruit/freshFruit09.png";
 import { Icon } from "@iconify/react";
+import SkillsFrontend from "./Components/Skills/SkillsFrontend";
+import SkillsDesign from "./Components/Skills/SkillsDesign";
+import SkillsDevelopment from "./Components/Skills/SkillsDevelopment";
 
 export const nav = [
   {
@@ -206,19 +209,19 @@ export const skillsFrontend = [
     id: 1,
     image: <Icon icon="logos:html-5" width="40" height="40" />,
     level: 90,
-    name: "HTML 5 - Advanced"
+    name: "HTML 5 - Advanced",
   },
   {
     id: 2,
     image: <Icon icon="logos:css-3" width="40" height="40" />,
     level: 90,
-    name: "CSS 3 - Advanced"
+    name: "CSS 3 - Advanced",
   },
   {
     id: 3,
     image: <Icon icon="logos:javascript" width="40" height="40" />,
     level: 70,
-    name: "JavaScript - Intermediate"
+    name: "JavaScript - Intermediate",
   },
   {
     id: 4,
@@ -230,7 +233,7 @@ export const skillsFrontend = [
       />
     ),
     level: 50,
-    name: "Typescript - Basic"
+    name: "Typescript - Basic",
   },
   {
     id: 5,
@@ -238,7 +241,7 @@ export const skillsFrontend = [
       <Icon icon="vscode-icons:file-type-reactjs" width="40" height="40" />
     ),
     level: 80,
-    name: "React - Advanced"
+    name: "React - Advanced",
   },
   {
     id: 6,
@@ -251,7 +254,7 @@ export const skillsFrontend = [
       />
     ),
     level: 70,
-    name: "Chakra UI - Advanced"
+    name: "Chakra UI - Advanced",
   },
   {
     id: 7,
@@ -264,7 +267,7 @@ export const skillsFrontend = [
       />
     ),
     level: 70,
-    name: "Material UI - Advanced"
+    name: "Material UI - Advanced",
   },
   {
     id: 8,
@@ -272,7 +275,7 @@ export const skillsFrontend = [
       <Icon icon="logos:bootstrap" color="#44c8c0" width="40" height="40" />
     ),
     level: 50,
-    name: "Bootstrap - Basic"
+    name: "Bootstrap - Basic",
   },
   {
     id: 9,
@@ -280,7 +283,7 @@ export const skillsFrontend = [
       <Icon icon="mdi:responsive" color="#707070" width="40" height="40" />
     ),
     level: 90,
-    name: "Responsiveness - Advanced"
+    name: "Responsiveness - Advanced",
   },
 ];
 
@@ -289,25 +292,25 @@ export const skillsDesign = [
     id: 10,
     image: <Icon icon="logos:adobe-xd" width="40" height="40" />,
     level: 90,
-    name: "Adobe XD - Advanced"
+    name: "Adobe XD - Advanced",
   },
   {
     id: 11,
     image: <Icon icon="logos:adobe-photoshop" width="40" height="40" />,
     level: 40,
-    name: "Adobe Photoshop - Basic"
+    name: "Adobe Photoshop - Basic",
   },
   {
     id: 12,
     image: <Icon icon="logos:trello" width="40" height="40" />,
     level: 70,
-    name: "Trello - Intermediate"
+    name: "Trello - Intermediate",
   },
   {
     id: 13,
     image: <Icon icon="logos:slack-icon" width="40" height="40" />,
     level: 70,
-    name: "Slack - Intermediate"
+    name: "Slack - Intermediate",
   },
 ];
 
@@ -316,18 +319,42 @@ export const skillsDevelopment = [
     id: 14,
     image: <Icon icon="logos:github-icon" width="40" height="40" />,
     level: 70,
-    name: "Github - Intermediate"
+    name: "Github - Intermediate",
   },
   {
     id: 15,
     image: <Icon icon="vscode-icons:file-type-vscode" width="40" height="40" />,
     level: 70,
-    name: "VSCode - Intermediate"
+    name: "VSCode - Intermediate",
   },
   {
     id: 16,
     image: <Icon icon="carbon:api-1" width="40" height="40" />,
     level: 60,
-    name: "API - Intermediate"
+    name: "API - Intermediate",
+  },
+];
+
+export const Skills = [
+  {
+    name: "Frontend Development",
+  },
+  {
+    name: "Design and Agile",
+  },
+  {
+    name: "Development Tools",
+  },
+];
+
+export const SkillsGroup = [
+  {
+    skill: <SkillsFrontend />,
+  },
+  {
+    skill: <SkillsDesign />,
+  },
+  {
+    skill: <SkillsDevelopment />,
   },
 ];
