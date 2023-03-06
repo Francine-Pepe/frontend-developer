@@ -1,9 +1,9 @@
 body {
   overflow-x: hidden;
+  /* min-height: 100vh; */
 }
 
 h1,
-h2,
 h3,
 h4,
 h5 {
@@ -45,11 +45,32 @@ button {
   border: none;
 }
 
+.animation {
+  width: 100vw;
+  height: 13vh;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding-top: 7.5rem;
+  position: fixed;
+  z-index: 1;
+}
+
 /* Media Queries */
+
+@media screen and (max-width: 1300px) {
+  .animation {
+    height: auto;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   h1 {
     font-size: 4rem;
+  }
+
+  .animation {
+    height: auto;
   }
 }
 
