@@ -45,11 +45,11 @@ export default function NavbarMobile() {
         PaperProps={{
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
-            width: "100vw",
+            minWidth: "100%",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "1rem"
+            marginTop: "0.5rem"
           },
         }}
       >
@@ -60,7 +60,6 @@ export default function NavbarMobile() {
                 <>
                   <NavLink to={data.link} key={index}>
                     <li>{data.name}</li>
-                    {/* <Divider className={styles.divider} /> */}
                   </NavLink>
                 </>
               );
