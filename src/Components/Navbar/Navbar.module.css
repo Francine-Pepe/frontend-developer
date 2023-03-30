@@ -55,14 +55,14 @@ button {
 }
 
 .navbar_mobile li:hover {
-  background-color: rgba(220, 120, 131, 0.09);
+  background-color: #b3005e;
   margin: 0 auto;
+  color: #ffffff;
 }
 
 li a:focus {
   color: #C92C6D;
 }
-
 
 /* Media queries */
 
@@ -86,7 +86,7 @@ li a:focus {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    width: 100vw;
+    min-width: 100vw;
   }
 }
 
