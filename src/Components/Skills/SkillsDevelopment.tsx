@@ -7,9 +7,9 @@ import SkillsProps from "./SkillsProps";
 function SkillsDevelopment() {
   return (
     <>
-      <main className={styles.skills_main}>
+      <main className={styles.skills_main_box}>
         <div className={styles.skills}>
-          <h3>Development Tools</h3>
+          <h2>Development Tools</h2>
           {skillsDevelopment.map((data) => {
             return (
               <>

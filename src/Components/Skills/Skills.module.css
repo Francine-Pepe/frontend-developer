@@ -5,13 +5,34 @@
 }
 
 .skills_main {
-  padding: 4rem;
+  padding: 2rem 0.5rem;
   display: flex;
   justify-content: center;
+  max-width: 100%;
+  background-image: url("../../Assets/skills_bg_keyboard_medium.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: auto;
+  object-fit: cover;
+}
+
+.skills_main_box {
+  height: 100vh;
+  margin: 2rem;
+}
+
+.skills_main_tabs {
+  padding-top: 8rem;
 }
 
 .skills_image {
   width: 7vw;
+}
+
+.skills_container .skills_image svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .skills_progressBar {
@@ -19,7 +40,7 @@
 }
 
 .skills {
-  width: 50vw;
+  width: 70vw;
   height: auto;
   background: #f8f8f8;
   border: solid #bdbdbd 0;
@@ -28,14 +49,12 @@
   -moz-box-shadow: 0 10px 26px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  margin: 0.5rem auto;
   border-radius: 5px;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
 }
 
-.skills_name h3 {
+.skills_name h2 {
   text-align: center;
-  font-family: "Agency FB";
   font-weight: 100;
 }
 
@@ -77,78 +96,142 @@
 
 .tab_list {
   text-align: center;
-  font-family: "Agency FB";
-  font-size: 1.5rem;
-  border: none;
-  margin: 0 0 10px;
-  padding: 0;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  border-bottom: none;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 0;
   height: auto;
+  font-weight: thin;
+  flex-direction: column;
 }
 
-/* .tab {
-  display: inline-block;
-  border: 1px solid transparent;
+.tab_list ul {
   border-bottom: none;
-  bottom: -1px;
-  position: relative;
-  list-style: none;
-  padding: 6px 12px;
-  cursor: pointer;
-} */
+  display: flex;
+  height: fit-content;
+  width: 87vw;
+  justify-content: space-evenly;
+}
 
 .tab {
   display: flex;
-  flex-direction: column;
-  border: none;
-  bottom: -1px;
-  padding: 1rem;
+  border-bottom: none;
+  padding: 0.5rem;
   cursor: pointer;
-  margin-top: 3rem;
+  margin-top: 1rem;
 }
 
-.tab:focus {
-  outline: none;
-  color: #c92c6d;
+.skills_btn::selection {
+  background: transparent;
 }
 
-.tab--selected {
+.button_box {
+  padding: inherit;
+}
+
+.button_box:hover {
+  background-color: transparent;
+}
+
+.skills_btn {
+  width: 18vw;
+  background-color: #ff5f9e;
   border: none;
+  border-radius: 5px;
+  color: #f0eeed;
+  padding: 0.7rem;
+  cursor: pointer;
+  text-transform: uppercase;
 }
 
-@media screen and (max-width: 1235px) {
-  .skills_main {
-    padding: 4rem 3rem;
+.skills_btn:hover {
+  background-color: #b3005e;
+}
+
+/* Media Queries */
+
+@media screen and (min-width: 1537px) {
+  .skills_main_tabs {
+    padding-top: 11rem;
+  }
+}
+
+@media screen and (max-width: 1018px) {
+  .skills_btn {
+    width: 24.3vw;
+  }
+
+  .skills {
+    width: 79vw;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .tab_list {
-    display: flex;
-    flex-direction: column;
-    margin-top: -3rem;
-    justify-content: center;
-    height: auto;
-  }
-
   .tab {
-    margin-top: 3rem;
     padding: 0;
   }
 
-  .tab--selected {
-    border: 1px solid transparent;
+  .skills_main_tabs {
+    padding-top: 10rem;
   }
 
-  .skills {
-    width: 70vw;
+  .skills_btn {
+    width: 26vw;
   }
 
   .skills_main {
-    padding: 3.5rem 0 2rem 0;
+    padding: 0.5rem 0.5rem;
+  }
+}
+
+@media screen and (min-height: 800px) {
+  .tab_list {
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 670px) {
+  .skills_btn {
+    font-size: 0.7rem;
+  }
+
+  .skills_main_tabs {
+    padding-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 579px) {
+  .skills_btn {
+    width: 27vw;
+    padding: 0.7rem 0.4rem;
+  }
+}
+
+@media screen and (max-width: 521px) {
+  .skills_btn {
+    padding: 0.7rem 2rem;
+    line-break: normal;
+    text-align: center;
+    width: 27vw;
+  }
+}
+
+@media screen and (max-width: 463px) {
+  .tab_list ul {
     display: flex;
+    flex-direction: column;
+  }
+
+  .skills_btn {
+    width: 85vw;
+    align-items: center;
     justify-content: center;
   }
+
+  /* .skills_main_tabs {
+    padding-top: 10rem;
+  } */
 }

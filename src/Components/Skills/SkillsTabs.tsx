@@ -6,16 +6,22 @@ import { Skills, SkillsGroup } from "../../data";
 
 function SkillsTabs() {
   return (
-    <div className={styles.skills_main}>
+    <div className={styles.skills_main_tabs}>
       <Tabs className={styles.tab_list}>
         <TabList>
           {Skills.map((data, index) => (
-            <Tab className={styles.tab}>{data.name}</Tab>
+            <Tab className={styles.tab} key={index} style={{background: "transparent"}}>
+              <div className={styles.button_box}>
+                <button className={styles.skills_btn}> {data.name}</button>
+              </div>
+            </Tab>
           ))}
         </TabList>
         {SkillsGroup.map((data, index) => (
-          <TabPanel>
-            <div>{data.skill}</div>
+          <TabPanel key={index} className={styles.tab_panel}>
+            <div className={styles.buttons_container}>
+              <button>{data.skill}</button>
+            </div>
           </TabPanel>
         ))}
       </Tabs>

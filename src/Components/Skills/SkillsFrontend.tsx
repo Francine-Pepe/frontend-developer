@@ -6,9 +6,9 @@ import SkillsProps from "./SkillsProps";
 function SkillsFrontend() {
   return (
     <>
-      <main className={styles.skills_main}>
+      <main className={styles.skills_main_box}>
         <div className={styles.skills}>
-          <h3>Frontend development</h3>
+          <h2>Frontend development</h2>
           {skillsFrontend.map((data) => {
             return (
               <>
