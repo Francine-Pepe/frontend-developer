@@ -1,15 +1,22 @@
 body {
   overflow-x: hidden;
   /* min-height: 100vh; */
+  margin: 0 auto;
 }
 
 h1,
+h2,
 h3,
 h4,
 h5 {
   font-family: "Lato", sans-serif;
   font-weight: 100;
 }
+
+/* h3 {
+  font-family: "Agency FB";
+  font-weight: 100;
+} */
 
 a {
   font-family: "Lato", sans-serif;
@@ -83,5 +90,9 @@ button {
 @media screen and (max-width: 800px) {
   h1 {
     font-size: 2.5rem;
+  }
+  .animation {
+    justify-content: center;
+    padding: 7.5rem 0 1rem 0;
   }
 }
