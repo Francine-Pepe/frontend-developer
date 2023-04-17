@@ -45,6 +45,11 @@ export const nav = [
     link: "/contact",
     id: 3,
   },
+  {
+    name: "resumé",
+    link: "/resumé",
+    id: 4,
+  },
 ];
 
 export const aboutText = [
