@@ -45,7 +45,7 @@ export default function NavbarMobile() {
         PaperProps={{
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
-            minWidth: "100%",
+            minWidth: "100vw",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
