@@ -87,6 +87,7 @@ li a:focus {
     align-content: center;
     align-items: center;
     min-width: 100vw;
+    align-self: center;
   }
 }
 
