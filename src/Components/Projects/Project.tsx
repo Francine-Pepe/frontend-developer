@@ -6,10 +6,10 @@ function Project() {
 
   return (
     <div>
-      {ProjectPage.map((data, index) => {
+      {ProjectPage.map((data: { image: string | undefined }, index: any) => {
         return (
           <>
-            <section className={styles.single_project_container}>
+            <section className={styles.single_project_container} key={index}>
               <img src={data.image} alt={""} />
             </section>
           </>

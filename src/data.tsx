@@ -23,6 +23,7 @@ import { Icon } from "@iconify/react";
 import SkillsFrontend from "./Components/Skills/SkillsFrontend";
 import SkillsDesign from "./Components/Skills/SkillsDesign";
 import SkillsDevelopment from "./Components/Skills/SkillsDevelopment";
+import ProfilePicture from "./Assets/profile_picture.png";
 
 export const nav = [
   {
@@ -46,8 +47,8 @@ export const nav = [
     id: 3,
   },
   {
-    name: "resumé",
-    link: "/resumé",
+    name: "resume",
+    link: "/resume",
     id: 4,
   },
 ];
@@ -361,5 +362,166 @@ export const SkillsGroup = [
   },
   {
     skill: <SkillsDevelopment />,
+  },
+];
+
+export const ResumeData = [
+  {
+    image: ProfilePicture,
+    name: "Francine Pêpe",
+    title: "Frontend Developer",
+    contact: "CONTACT",
+    links: "LINKS",
+    tech: "TECH SKILLS",
+    design: "DESIGN SKILLS",
+    languages: "LANGUAGES",
+    hobby: "HOBBY",
+  },
+];
+
+// export const ResumeDataTitles = [
+//   { DataTitle: "TECH SKILLS:" },
+//   { DataTitle: "DESIGN SKILLS" },
+//   { DataTitle: "LANGUAGES" },
+//   { DataTitle: "HOBBY" },
+// ];
+
+export const Contact = [
+  {
+    icon: <Icon icon="fluent-emoji:telephone" width="20" height="20" />,
+    information: "01522 2801863",
+    link: "tel:+49015222801863",
+  },
+  {
+    icon: <Icon icon="mdi:email" color="white" width="20" height="20" />,
+    information: "franmelopepe2@gmail.com",
+    link: "mailto:franmelopepe2@gmail.com",
+  },
+  {
+    icon: (
+      <Icon
+        icon="openmoji:location-indicator-red"
+        color="white"
+        width="20"
+        height="20"
+      />
+    ),
+    information: "Bobergerstraße, 17 22111 - Hamburg",
+  },
+];
+
+export const ResumeLinks = [
+  {
+    icon: <Icon icon="carbon:portfolio" color="white" width="20" height="20" />,
+    name: "Portfolio",
+    link: "https://francine-pepe.github.io/portfolio-webdev/",
+  },
+  {
+    icon: <Icon icon="logos:linkedin-icon" width="20" height="20" />,
+    name: "Linkedin",
+    link: "https://www.linkedin.com/in/francinemelopepe/",
+  },
+  {
+    icon: <Icon icon="logos:github-octocat" width="20" height="20" />,
+    name: "Github",
+    link: "https://github.com/Francine-Pepe",
+  },
+  {
+    icon: (
+      <Icon icon="fa-brands:behance" color="white" width="20" height="20" />
+    ),
+    name: "Behance",
+    link: "https://www.behance.net/francinepepe",
+  },
+];
+
+export const TechSkills = [
+  {
+    name: "HTML",
+    level: 90,
+  },
+  {
+    name: "CSS",
+    level: 90,
+  },
+  {
+    name: "React.js",
+    level: 80,
+  },
+  {
+    name: "Vue.js",
+    level: 40,
+  },
+  {
+    name: "JavaScript",
+    level: 70,
+  },
+  {
+    name: "Responsive Design",
+    level: 90,
+  },
+  {
+    name: "Bootstrap",
+    level: 50,
+  },
+  {
+    name: "Material UI",
+    level: 70,
+  },
+  {
+    name: "Chakra UI",
+    level: 70,
+  },
+  {
+    name: "API",
+    level: 60,
+  },
+  {
+    name: "UI / UX",
+    level: 60,
+  },
+  {
+    name: "Git / Github",
+    level: 70,
+  },
+];
+
+export const DesignSkills = [
+  {
+    name: "Adobe XD",
+    level: 90,
+  },
+  {
+    name: "Adobe Illustrator",
+    level: 40,
+  },
+  {
+    name: "Adobe Photoshop",
+    level: 40,
+  },
+];
+
+export const Languages = [
+  {
+    name: "Portuguese",
+    level: 100,
+  },
+  {
+    name: "English",
+    level: 90,
+  },
+  {
+    name: "German - Telc B2",
+    level: 60,
+  },
+  {
+    name: "Spanish",
+    level: 40,
+  },
+];
+
+export const Hobby = [
+  {
+    name: "Photography",
   },
 ];
