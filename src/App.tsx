@@ -10,6 +10,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
 // import Home from "./Components/Home/Home";
 import Project from "./Components/Projects/Project";
+import Resume from "./Components/Resume/Resume";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/project/:id" element={<Project />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/resume" element={<Resume />} />
         </Routes>
         <Footer />
       </BrowserRouter>
