@@ -27,29 +27,29 @@ import ProfilePicture from "./Assets/profile_picture.png";
 
 export const nav = [
   {
+    index: 0,
     name: "about",
     link: "/",
-    id: 0,
   },
   {
+    index: 1,
     name: "projects",
     link: "/projects",
-    id: 1,
   },
   {
+    index: 2,
     name: "skills",
     link: "/skills",
-    id: 2,
   },
   {
+    index: 3,
     name: "contact",
     link: "/contact",
-    id: 3,
   },
   {
+    index: 4,
     name: "resume",
     link: "/resume",
-    id: 4,
   },
 ];
 
@@ -376,28 +376,28 @@ export const ResumeData = [
     design: "DESIGN SKILLS",
     languages: "LANGUAGES",
     hobby: "HOBBY",
+    profile: "PROFILE",
+    experience: "EXPERIENCE",
+    education: "EDUCATION & TRAINING",
+    certifications: "CERTIFICATED COURSES",
   },
 ];
 
-// export const ResumeDataTitles = [
-//   { DataTitle: "TECH SKILLS:" },
-//   { DataTitle: "DESIGN SKILLS" },
-//   { DataTitle: "LANGUAGES" },
-//   { DataTitle: "HOBBY" },
-// ];
-
 export const Contact = [
   {
+    id: 0,
     icon: <Icon icon="fluent-emoji:telephone" width="20" height="20" />,
     information: "01522 2801863",
     link: "tel:+49015222801863",
   },
   {
+    id: 1,
     icon: <Icon icon="mdi:email" color="white" width="20" height="20" />,
     information: "franmelopepe2@gmail.com",
     link: "mailto:franmelopepe2@gmail.com",
   },
   {
+    id: 2,
     icon: (
       <Icon
         icon="openmoji:location-indicator-red"
@@ -412,21 +412,25 @@ export const Contact = [
 
 export const ResumeLinks = [
   {
+    id: 0,
     icon: <Icon icon="carbon:portfolio" color="white" width="20" height="20" />,
     name: "Portfolio",
     link: "https://francine-pepe.github.io/portfolio-webdev/",
   },
   {
+    id: 1,
     icon: <Icon icon="logos:linkedin-icon" width="20" height="20" />,
     name: "Linkedin",
     link: "https://www.linkedin.com/in/francinemelopepe/",
   },
   {
+    id: 2,
     icon: <Icon icon="logos:github-octocat" width="20" height="20" />,
     name: "Github",
     link: "https://github.com/Francine-Pepe",
   },
   {
+    id: 3,
     icon: (
       <Icon icon="fa-brands:behance" color="white" width="20" height="20" />
     ),
@@ -437,50 +441,62 @@ export const ResumeLinks = [
 
 export const TechSkills = [
   {
+    id: 0,
     name: "HTML",
     level: 90,
   },
   {
+    id: 1,
     name: "CSS",
     level: 90,
   },
   {
+    id: 2,
     name: "React.js",
     level: 80,
   },
   {
+    id: 3,
     name: "Vue.js",
     level: 40,
   },
   {
+    id: 4,
     name: "JavaScript",
     level: 70,
   },
   {
+    id: 5,
     name: "Responsive Design",
     level: 90,
   },
   {
+    id: 6,
     name: "Bootstrap",
     level: 50,
   },
   {
+    id: 7,
     name: "Material UI",
     level: 70,
   },
   {
+    id: 8,
     name: "Chakra UI",
     level: 70,
   },
   {
+    id: 9,
     name: "API",
     level: 60,
   },
   {
+    id: 10,
     name: "UI / UX",
     level: 60,
   },
   {
+    id: 11,
     name: "Git / Github",
     level: 70,
   },
@@ -488,14 +504,17 @@ export const TechSkills = [
 
 export const DesignSkills = [
   {
+    id: 0,
     name: "Adobe XD",
     level: 90,
   },
   {
+    id: 1,
     name: "Adobe Illustrator",
     level: 40,
   },
   {
+    id: 2,
     name: "Adobe Photoshop",
     level: 40,
   },
@@ -503,18 +522,22 @@ export const DesignSkills = [
 
 export const Languages = [
   {
+    id: 0,
     name: "Portuguese",
     level: 100,
   },
   {
+    id: 1,
     name: "English",
     level: 90,
   },
   {
+    id: 2,
     name: "German - Telc B2",
     level: 60,
   },
   {
+    id: 3,
     name: "Spanish",
     level: 40,
   },
@@ -523,5 +546,154 @@ export const Languages = [
 export const Hobby = [
   {
     name: "Photography",
+  },
+];
+
+export const Profile = [
+  {
+    description:
+      "Frontend Developer with a Design background - I have 10 years of experience in the Fashion Design area. I am an open-minded, creative, focused and a persistent person, who appreciates to create applications from scratch - from the UI Development until the app final stage. My UI design knowledge led me to develop important and useful skills, that is, user-friendly applications. \n Currently, I work with: \n \n => Development of Low and Hifi Wireframes - Web Interface Mockups - Prototyping using Adobe XD \n => I transfer the design into code with HTML, CSS, JavaScript, Typescript, React.js, Responsive design and API \n => I use mostly Material UI and Chacka UI in my Projects, but also plain CSS \n => Npm and Github are also part of my job \n \n My soft skills are: \n \n=> Creativity\n=> Flexibility \n=> Willingness to learn",
+  },
+];
+
+export const Experience = [
+  {
+    id: 0,
+    icon: (
+      <Icon
+        icon="noto:laptop-computer"
+        color="#707070"
+        width="20"
+        height="20"
+      />
+    ),
+    title: "Volunteer - Frontend Developer",
+    companyName: "Redezeit für Dich - Hamburg - Germany",
+    link: "https://www.virtualsupporttalks.de/de",
+    period: "October 2022 until the present day",
+    description:
+      "° At the moment I work as a volunteer in this Project focused on mental health. I make small frontend changes when necessary, as well as create new features using Remix Framework (Typescript).",
+  },
+  {
+    id: 1,
+    icon: (
+      <Icon icon="noto-v1:scissors" color="#707070" width="20" height="20" />
+    ),
+    title: "Fashion Designer and Pattern Maker",
+    companyName: "Self-employed - Niterói, Rio de Janeiro, Brazil",
+    link: "",
+    period: "January 2009 - March 2018",
+    description:
+      "° Responsible for the creation and Product Development \n° Pattern-making developer \n° Buyer - Fabrics and Supplies \n°  Experience with Clothes Technical Drawing (freehand and Illustrator)",
+  },
+  {
+    id: 2,
+    icon: (
+      <Icon
+        icon="la:chalkboard-teacher"
+        color="#707070"
+        width="20"
+        height="20"
+      />
+    ),
+    title: "Pattern-maker, Sew and Cut Instructor",
+    companyName: "Manufatura Lúdica - Niterói, Rio de Janeiro, Brazil",
+    link: "https://www.facebook.com/ManufaturaLudica",
+    period: "April 2017 - April 2018",
+    description:
+      "° As a Pattern-maker instructor, I guided students to take their measurements and develop their own clothes, from the choice of fabrics to the final product.",
+  },
+];
+
+export const Education = [
+  {
+    id: 0,
+    icon: (
+      <Icon
+        icon="noto:laptop-computer"
+        color="#707070"
+        width="20"
+        height="20"
+      />
+    ),
+    title: "Web Development : HTML - CSS - REACT JS - JAVASCRIPT",
+    companyName: "WBS Coding School - Hamburg - Germany",
+    link: "https://www.wbscodingschool.com/",
+    period: "October 2021 - February 2022",
+    description:
+      "° Project-based, practice-orientated, remote, collaborative coding training.",
+  },
+  {
+    id: 1,
+    icon: (
+      <Icon
+        icon="streamline:interface-edit-paint-color-colors-design-paint-painting-palette"
+        color="pink"
+        width="20"
+        height="20"
+      />
+    ),
+    title: "Web Design - Training",
+    companyName: "Senac Rio - Rio de Janeiro, Brazil",
+    link: "https://www.senac.br/",
+    period: "October 2021 - February 2022",
+    description:
+      "° The course is focused on the development of Web Interfaces, using HTML and CSS.",
+  },
+
+  {
+    id: 2,
+    icon: (
+      <Icon icon="noto-v1:womans-clothes" color="pink" width="20" height="20" />
+    ),
+    title: "Fashion Design - Bachelor Degree",
+    companyName:
+      "Universidade Salgado de Oliveira - Niterói, Rio de Janeiro, Brazil",
+    link: "https://universo.edu.br/",
+    period: "January 2007 - December 2009",
+    description: "",
+  },
+];
+
+export const CertificatedCourses = [
+  {
+    id: 0,
+    icon: <Icon icon="logos:javascript" width="20" height="20" />,
+    title: "Programming with JavaScript",
+    companyName: "Coursera - by Meta",
+    link: "https://www.coursera.org/account/accomplishments/certificate/XGJR9LWKB6PT",
+    period: "January 2023 - February 2023",
+  },
+  {
+    id: 1,
+    icon: <Icon icon="logos:github-icon" width="20" height="20" />,
+    title: "Version Control - Git / Github",
+    companyName: "Coursera - by Meta",
+    link: "https://www.coursera.org/account/accomplishments/certificate/DE4UFM73538M",
+    period: "March 2023 - March 2023",
+  },
+  {
+    id: 2,
+    icon: <Icon icon="logos:html-5" width="20" height="20" />,
+    title: "HTML 5 ",
+    companyName: "Codecademy",
+    link: "https://www.codecademy.com/profiles/francine-Pepe1363290626/certificates/9eb0741e5ebef1f9f58a53bfac67d3a7",
+    period: "October 2021 - October 2021",
+  },
+  {
+    id: 3,
+    icon: <Icon icon="logos:css-3" width="20" height="20" />,
+    title: "CSS 3",
+    companyName: "Codecademy",
+    link: "https://www.codecademy.com/profiles/francine-Pepe1363290626/certificates/9a5bb1fc45b4281af1fffec93b0aaf05",
+    period: "October 2021 - October 2021",
+  },
+  {
+    id: 4,
+    icon: <Icon icon="logos:adobe-xd" width="20" height="20" />,
+    title: "User Experience Design Essencials UI / UX - Adobe XD",
+    companyName: "Udemy",
+    link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-ea73faa2-d0c6-4063-aed2-fd5f65a3d65d.pdf",
+    period: "January 2021 - December 2021",
   },
 ];

@@ -1,14 +1,30 @@
-
-.resume_container,
 .resume {
   width: 100vw;
   height: auto;
-  padding-top: 3rem;
+  padding-top: 3.5rem;
+  display: flex;
+  border: 1px green solid;
+}
+
+.main_resume_mobile {
+  display: none;
+}
+
+.main_resume {
   display: flex;
 }
 
 .resume_left_container {
   width: 30%;
+}
+
+.resume_contact,
+.profile_data {
+  padding-top: 6rem;
+}
+
+.resume_left_container,
+.resume_contact {
   height: auto;
   border: 1px solid red;
   background-color: #153b61;
@@ -17,13 +33,15 @@
   align-items: center;
   color: #ffffff;
   font-weight: bold 700;
-  /* align-items: space-evenly; */
 }
 
 .resume_right_container {
-  width: 70%;
+  width: 66vw;
   height: auto;
-  border: 1px solid blue;
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 2rem 0 1rem;
 }
 
 .profile_picture {
@@ -31,7 +49,7 @@
   height: 10rem;
   border-radius: 50%;
   z-index: 1;
-  padding: 3rem 0;
+  padding: 3rem;
 }
 
 .profile_square {
@@ -51,11 +69,26 @@
   align-items: center;
 }
 
+.profile_data_courses {
+  display: inline-flex;
+  width: 30rem;
+  height: 8rem;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
 .profile_data {
-  padding: 0 1rem;
+  padding: 0;
   display: flex;
-  align-self: self-start;
+  align-self: flex-start;
   flex-direction: column;
+  /* width: 30vw; */
+}
+
+.profile_data p {
+  white-space: pre-wrap;
+  line-height: 1.5;
+  margin-right: 2rem;
 }
 
 .profile_data hr {
@@ -83,7 +116,20 @@
 .skills_resume_left_container {
   width: 100%;
   display: flex;
-  /* margin-left: 2rem; */
+  border: rgb(8, 242, 238) 1px solid;
+  gap: 0.5rem;
+}
+
+.resume_sections h3 {
+  text-transform: uppercase;
+}
+
+.experience_container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  height: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 /* Media queries */
@@ -99,19 +145,50 @@
   .skills_resume_left_container {
     display: flex;
     flex-direction: column;
-    margin-left: 2rem;
   }
 }
 
 @media screen and (max-width: 800px) {
-  .resume {
-    display: flex;
+  .main_resume_mobile {
+    display: block;
+    padding-top: 3rem;
+  }
+
+  .main_resume {
+    /* display: flex;
     flex-direction: column;
+    padding-top: 3rem; */
+    display: none;
   }
 
   .resume_left_container,
   .resume_right_container {
     width: 100%;
-    height: 100vh;
+    padding: 0;
+  }
+
+  /* .resume_right_container {
+    padding: 0 1rem;
+  } */
+
+  .resume_sections {
+    width: 100%;
+  }
+
+  .resume_contact,
+  .profile_data {
+    padding-top: 0;
+    width: 100%;
+  }
+
+  .profile_data {
+    padding: 0 1rem;
+  }
+
+  .profile_data h2,
+  .profile_data hr {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
   }
 }

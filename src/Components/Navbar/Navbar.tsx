@@ -6,30 +6,26 @@ import NavbarMobile from "./NavbarMobile";
 
 function Navbar() {
   return (
-    <>
-      <nav className={styles.navbar_container}>
-        <NavLink to={"/"} className={styles.logo_link}>
-          <img src={Logo} alt={"Logo"} className={styles.logo} />
-        </NavLink>
+    <nav className={styles.navbar_container}>
+      <NavLink to={"/"} className={styles.logo_link}>
+        <img src={Logo} alt={"Logo"} className={styles.logo} />
+      </NavLink>
 
-        <div className={styles.navbar}>
-          <ul id={styles.list}>
-            {nav.map((data, index) => {
-              return (
-                <>
-                  <NavLink to={data.link} key={index}>
-                    <li>{data.name}</li>
-                  </NavLink>
-                </>
-              );
-            })}
-          </ul>
-        </div>
-        <div className={styles.navbar_mobile_container}>
-          <NavbarMobile />
-        </div>
-      </nav>
-    </>
+      <div className={styles.navbar}>
+        <ul id={styles.list}>
+          {nav.map((data) => {
+            return (
+              <NavLink to={data.link} key={data.index}>
+                <li>{data.name}</li>
+              </NavLink>
+            );
+          })}
+        </ul>
+      </div>
+      <div className={styles.navbar_mobile_container}>
+        <NavbarMobile />
+      </div>
+    </nav>
   );
 }
 
