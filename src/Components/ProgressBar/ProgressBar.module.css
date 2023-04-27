@@ -23,13 +23,13 @@ span {
 
 .resume_progressBar_container {
   height: 0.2rem;
-  width: 80vw;
+  width: 70%;
   background-color: rgba(78, 110, 143, 66);
   border-radius: 50px;
   margin: 2rem 0 ;
   /* z-index: 3;
   position: absolute;
-  left: 10rem; */
+  left: 12rem; */
 }
 
 .resume_filled_container {
