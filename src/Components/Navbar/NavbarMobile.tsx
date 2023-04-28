@@ -49,19 +49,17 @@ export default function NavbarMobile() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "0.5rem"
+            marginTop: "0.5rem",
           },
         }}
       >
         <div className={styles.navbar_mobile}>
           <ul className={styles.list}>
-            {nav.map((data, index) => {
+            {nav.map((data) => {
               return (
-                <>
-                  <NavLink to={data.link} key={index}>
-                    <li>{data.name}</li>
-                  </NavLink>
-                </>
+                <NavLink to={data.link} key={data.index}>
+                  <li>{data.name}</li>
+                </NavLink>
               );
             })}
           </ul>
