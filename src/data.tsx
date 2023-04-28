@@ -56,7 +56,7 @@ export const nav = [
 export const aboutText = [
   {
     title: "About me",
-    text: "Hi, my name is Francine and I am a Developer! I am currently based in Hamburg, Germany, but I was born in Brazil. I love to create stuff, and that is why I first worked as a Fashion Designer for almost 10 years. After moving to Germany, I felt like changing my career as well, but I still wanted to continue working creatively, so, here I am creating beautiful and functional Websites and Apps. I am passionate about Visual Design and Animation, which I guess I express myself in the most effective and clean way. And what do I do? You can find out bellow",
+    text: "Hi, my name is Francine and I am a Developer! I am currently based in Hamburg, Germany, but I was born in Brazil. I love to create stuff, and that is why I first worked as a Fashion Designer for almost 10 years. After moving to Germany, I felt like changing my career as well, but I still wanted to continue working creatively, so, here I am creating beautiful and functional Websites and Apps. I am passionate about Visual Design, colors, animation, photography - so, basically anything that involves a visual concept! On PROJECTS you will be able to see a little bit of my work, where I tried to give my best, and where I learned more and more about this world called Web Development :D ",
   },
 ];
 
@@ -552,7 +552,7 @@ export const Hobby = [
 export const Profile = [
   {
     description:
-      "Frontend Developer with a Design background - I have 10 years of experience in the Fashion Design area. I am an open-minded, creative, focused and a persistent person, who appreciates to create applications from scratch - from the UI Development until the app final stage. My UI design knowledge led me to develop important and useful skills, that is, user-friendly applications. \n Currently, I work with: \n \n => Development of Low and Hifi Wireframes - Web Interface Mockups - Prototyping using Adobe XD \n => I transfer the design into code with HTML, CSS, JavaScript, Typescript, React.js, Responsive design and API \n => I use mostly Material UI and Chacka UI in my Projects, but also plain CSS \n => Npm and Github are also part of my job \n \n My soft skills are: \n \n=> Creativity\n=> Flexibility \n=> Willingness to learn",
+      "Frontend Developer with a Design background - I have 10 years of experience in the Fashion Design area. I am an open-minded, creative, focused and a persistent person, who appreciates to create applications from scratch - from the UI Development until the app final stage. My UI design knowledge led me to develop important and useful skills, that is, user-friendly applications. \n Currently, I work with: \n \n ° Development of Low and Hifi Wireframes - Web Interface Mockups - Prototyping using Adobe XD \n ° I transfer the design into code with HTML, CSS, JavaScript, Typescript, React.js, Responsive design and API \n ° I use mostly Material UI and Chacka UI in my Projects, but also plain CSS \n ° Npm and Github are also part of my job \n \n My soft skills are: \n \n° Creativity\n° Flexibility \n° Willingness to learn",
   },
 ];
 
