@@ -1,4 +1,4 @@
-import React from "react";
+import { Component } from "react";
 import styles from "./Resume.module.css";
 import ResumeContact from "./ResumeContact";
 import Links from "./Links";
@@ -10,59 +10,68 @@ import ResumeProfile from "./ResumeProfile";
 import ResumeExperience from "./ResumeExperience";
 import ResumeEducation from "./ResumeEducation";
 import ResumeCertificatedCourses from "./ResumeCertificatedCourses";
+import ReactToPrint from "react-to-print";
+import { Icon } from "@iconify/react";
 
-function Resume() {
-
-  const today = new Date().toLocaleDateString("en-GB", {
-    day: "numeric",
-    month: "long",
-    year: "numeric",
-  });
-  const currentMonth = new Date(today).getMonth();
-  const currentYear = new Date().getFullYear();
-
-  return (
-    <>
-      <main className={styles.main_resume}>
-        <section className={styles.resume_left_container}>
-          <ResumeContact />
-          <Links />
-          <ResumeSkills />
-          <ResumeDesign />
-          <ResumeLanguages />
-          <ResumeHobby />
-          <section>
-            Germany, {currentMonth} {currentYear}
+export class Resume extends Component {
+  componentRef: any;
+  render() {
+    return (
+      <>
+        <div>
+          <ReactToPrint
+            trigger={() => {
+              return (
+                <button className={styles.print}>
+                  <span className={styles.print_text}>
+                    <Icon icon="fxemoji:printericon" width="20" height="20" />
+                    Print or Save this Resumé
+                  </span>
+                </button>
+              );
+            }}
+            content={() => this.componentRef}
+            documentTitle="Francine Pêpe - CV"
+          />
+        </div>
+        <main
+          className={styles.main_resume}
+          ref={(el) => (this.componentRef = el)}
+        >
+          <div className={styles.resume_left_container}>
+            <ResumeContact />
+            <Links />
+            <ResumeSkills />
+            <ResumeDesign />
+            <ResumeLanguages />
+            <ResumeHobby />
+          </div>
+          <section className={styles.resume_right_container}>
+            <ResumeProfile />
+            <ResumeExperience />
+            <ResumeEducation />
+            <ResumeCertificatedCourses />
           </section>
-        </section>
-        <section className={styles.resume_right_container}>
-          <ResumeProfile />
-          <ResumeExperience />
-          <ResumeEducation />
-          <ResumeCertificatedCourses />
-        </section>
-      </main>
-      <main className={styles.main_resume_mobile}>
-        <section className={styles.resume_right_container}>
-          <ResumeContact />
-          <ResumeProfile />
-          <ResumeExperience />
-          <ResumeEducation />
-          <ResumeCertificatedCourses />
-          <section>
-            Germany, {currentMonth} {currentYear}
+        </main>
+        <main className={styles.main_resume_mobile}>
+          <section className={styles.resume_right_container}>
+            <ResumeContact />
+            <ResumeProfile />
+            <ResumeExperience />
+            <ResumeEducation />
+            <ResumeCertificatedCourses />
           </section>
-        </section>
-        <section className={styles.resume_left_container}>
-          <Links />
-          <ResumeSkills />
-          <ResumeDesign />
-          <ResumeLanguages />
-          <ResumeHobby />
-        </section>
-      </main>
-    </>
-  );
+          <section className={styles.resume_left_container}>
+            <Links />
+            <ResumeSkills />
+            <ResumeDesign />
+            <ResumeLanguages />
+            <ResumeHobby />
+          </section>
+        </main>
+      </>
+    );
+  }
 }
 
 export default Resume;
