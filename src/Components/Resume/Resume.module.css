@@ -3,7 +3,6 @@
   height: auto;
   padding-top: 3.5rem;
   display: flex;
-  border: 1px green solid;
 }
 
 .main_resume_mobile {
@@ -26,7 +25,6 @@
 .resume_left_container,
 .resume_contact {
   height: auto;
-  border: 1px solid red;
   background-color: #153b61;
   display: flex;
   flex-direction: column;
@@ -38,7 +36,6 @@
 .resume_right_container {
   width: 66vw;
   height: auto;
-  border: 1px solid orange;
   display: flex;
   flex-direction: column;
   padding: 4rem 2rem 0 1rem;
@@ -71,10 +68,9 @@
 
 .profile_data_courses {
   display: inline-flex;
+  align-content: center;
   width: 30rem;
   height: 8rem;
-  gap: 1rem;
-  flex-wrap: wrap;
 }
 
 .profile_data {
@@ -82,7 +78,6 @@
   display: flex;
   align-self: flex-start;
   flex-direction: column;
-  /* width: 30vw; */
 }
 
 .profile_data p {
@@ -116,7 +111,6 @@
 .skills_resume_left_container {
   width: 100%;
   display: flex;
-  border: rgb(8, 242, 238) 1px solid;
   gap: 0.5rem;
 }
 
@@ -130,6 +124,38 @@
   gap: 1rem;
   height: 0.5rem;
   margin-top: 1.5rem;
+}
+
+.resume_date {
+  align-self: center;
+}
+
+.print {
+  width: 10vw;
+  height: 10rem;
+  padding-top: 9rem;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+}
+
+.print span {
+  color: #707070;
+  font-size: 0;
+  font-family: "Lato", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.print:hover span {
+  font-size: 0.7rem;
+  transition: width 4s linear 4s;
+}
+
+.print_text {
+  color: white;
 }
 
 /* Media queries */
@@ -155,9 +181,6 @@
   }
 
   .main_resume {
-    /* display: flex;
-    flex-direction: column;
-    padding-top: 3rem; */
     display: none;
   }
 
@@ -167,13 +190,9 @@
     padding: 0;
   }
 
-  /* .resume_right_container {
-    padding: 0 1rem;
-  } */
-
-  .resume_sections {
+  /* .resume_sections {
     width: 100%;
-  }
+  } */
 
   .resume_contact,
   .profile_data {

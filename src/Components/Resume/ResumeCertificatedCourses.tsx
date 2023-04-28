@@ -16,7 +16,7 @@ function ResumeCertificatedCourses() {
                 ({ id, icon, title, companyName, link, period }) => {
                   return (
                     <div key={id} className={styles.profile_data_courses}>
-                      <div>
+                      <div className={styles.courses_card}>
                         <ResumeContentProps
                           title={title}
                           icon={icon}

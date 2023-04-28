@@ -5,6 +5,10 @@ import { ResumeData, Hobby } from "../../data";
 import ResumeTitles from "./ResumeTitles";
 
 function ResumeHobby() {
+  const today = new Date();
+  const month = today.toLocaleString("default", { month: "long" });
+  const currentYear = new Date().getFullYear();
+
   return (
     <main>
       <section className={styles.resume_left_container}>
@@ -22,6 +26,11 @@ function ResumeHobby() {
                   </div>
                 );
               })}
+              <section className={styles.resume_date}>
+                <h4>
+                  Germany, {month} {currentYear}
+                </h4>
+              </section>
             </div>
           );
         })}
