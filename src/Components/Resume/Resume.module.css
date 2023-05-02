@@ -190,17 +190,14 @@
     padding: 0;
   }
 
-  /* .resume_sections {
-    width: 100%;
-  } */
-
   .resume_contact,
   .profile_data {
     padding-top: 0;
     width: 100%;
   }
 
-  .profile_data {
+  .profile_data section,
+  .profile_data p {
     padding: 0 1rem;
   }
 
@@ -209,5 +206,9 @@
     width: 90vw;
     display: flex;
     justify-content: center;
+  }
+
+  .resume_skills_container {
+    width: 80vw;
   }
 }
