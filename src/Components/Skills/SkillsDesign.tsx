@@ -11,20 +11,17 @@ function SkillsDesign() {
           <h2>Design and Agile</h2>
           {skillsDesign.map((data) => {
             return (
-              <>
-                <section className={styles.skills_container} key={data.id}>
-                  <div className={styles.skills_image}>
-                    <SkillsProps image={data.image} name={data.name} />
-                  </div>
-                  <div className={styles.skills_progressBar}>
-                    <ProgressBar completed={data.level} />
-                  </div>
-                </section>
-              </>
+              <section className={styles.skills_container} key={data.id}>
+                <div className={styles.skills_image}>
+                  <SkillsProps image={data.image} name={data.name} />
+                </div>
+                <div className={styles.skills_progressBar}>
+                  <ProgressBar completed={data.level} />
+                </div>
+              </section>
             );
           })}
         </div>
-        
       </main>
     </>
   );

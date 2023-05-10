@@ -56,7 +56,7 @@ export const nav = [
 export const aboutText = [
   {
     title: "About me",
-    text: "Hi, my name is Francine and I am a Developer! I am currently based in Hamburg, Germany, but I was born in Brazil. I love to create stuff, and that is why I first worked as a Fashion Designer for almost 10 years. After moving to Germany, I felt like changing my career as well, but I still wanted to continue working creatively, so, here I am creating beautiful and functional Websites and Apps. I am passionate about Visual Design, colors, animation, photography - so, basically anything that involves a visual concept! On PROJECTS you will be able to see a little bit of my work, where I tried to give my best, and where I learned more and more about this world called Web Development :D ",
+    text: "Hi, my name is Francine and I am a Frontend Developer! I am currently based in Hamburg, Germany, but I was born in Brazil. I have such a creative mind, and that is why I first worked as a Fashion Designer for almost 10 years. After moving to Germany, I felt like changing my career as well, but I still wanted to continue working creatively, so, here I am creating beautiful and functional Websites and Apps. I am passionate about Visual Design, colors, animation, photography - so, basically anything that involves a visual concept! On PROJECTS you will be able to see a little bit of my work, where I tried to give my best, and where I learned more and more about this world called Web Development :D. \nAt the moment I work with React JS, HTML 5, CSS 3, JavaScript, Typescript, Responsive design, Github, API´s and component libraries like Chakra UI, Material UI and Bootstrap.",
   },
 ];
 
@@ -695,5 +695,39 @@ export const CertificatedCourses = [
     companyName: "Udemy",
     link: "https://udemy-certificate.s3.amazonaws.com/pdf/UC-ea73faa2-d0c6-4063-aed2-fd5f65a3d65d.pdf",
     period: "January 2021 - December 2021",
+  },
+];
+
+export const ContactPage = [
+  {
+    title: "Contact",
+    text: "Did you enjoy my work and would like to hire me, or perhaps develop a personal project? Send me an e-mail and let´s talk. Just click on the envelope, or use the form. I am looking forward to it :) ",
+    link: "mailto:franmelopepe@gmail.com",
+  },
+];
+
+export const ContactFormData = [
+  {
+    id: "name",
+    title: "Name:",
+    htmlFor: "name",
+    name: "user_name",
+    type: "text",
+    placeholder: "John Daves",
+  },
+  {
+    id: "email",
+    title: "E-mail:",
+    htmlFor: "email",
+    name: "user_email",
+    type: "text",
+    placeholder: "johndaves@johndaves.com",
+  },
+  {
+    id: "phone",
+    title: "Phone:",
+    htmlFor: "phone",
+    name: "user_phone",
+    type: "tel",
   },
 ];

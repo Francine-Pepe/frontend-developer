@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import styles from "./Skills.module.css";
 import { skillsDevelopment } from "../../data";
 import ProgressBar from "../ProgressBar/ProgressBar";
@@ -12,7 +11,6 @@ function SkillsDevelopment() {
           <h2>Development Tools</h2>
           {skillsDevelopment.map((data) => {
             return (
-              <>
                 <section className={styles.skills_container} key={data.id}>
                   <div className={styles.skills_image}>
                     <SkillsProps image={data.image} name={data.name} />
@@ -21,7 +19,6 @@ function SkillsDevelopment() {
                     <ProgressBar completed={data.level} />
                   </div>
                 </section>
-              </>
             );
           })}
         </div>

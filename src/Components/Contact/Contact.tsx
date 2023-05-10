@@ -1,9 +1,49 @@
-import React from 'react'
+import React from "react";
+import styles from "./Contact.module.css";
+import { ContactPage } from "../../data";
+import Envelope from "../Animations/Envelope";
+import ContactBackground from "../../Assets/Contact_bg.png";
+import ContactForm from "./ContactForm";
 
 function Contact() {
   return (
-    <h1>Contact</h1>
-  )
+    <main className={styles.paper_container}>
+      {ContactPage.map((data, index) => {
+        return (
+          <section className={styles.contact_left_container} key={index}>
+            <h1>{data.title}</h1>
+            <p>{data.text}</p>
+            <div className={styles.contact_animation}>
+              <a href={data.link}>
+                <Envelope />
+              </a>
+            </div>
+          </section>
+        );
+      })}
+      <section className={styles.contact_right_container}>
+        <div className={styles.contact_form}>
+          <ContactForm />
+        </div>
+        {/* <div className={styles.paper}>
+          <div className={styles.lines}>
+            <div className={styles.Lettertext} spellCheck="false">
+              <br />
+              <br />
+
+              <br />
+              <br />
+              <br />
+              <br />
+
+              <br />
+              <br />
+            </div>
+          </div>
+        </div> */}
+      </section>
+    </main>
+  );
 }
 
-export default Contact
+export default Contact;

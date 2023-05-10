@@ -8,11 +8,9 @@ function Project() {
     <div>
       {ProjectPage.map((data: { image: string | undefined }, index: any) => {
         return (
-          <>
             <section className={styles.single_project_container} key={index}>
               <img src={data.image} alt={""} />
             </section>
-          </>
         );
       })}
     </div>
