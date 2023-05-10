@@ -11,7 +11,6 @@ function SkillsFrontend() {
           <h2>Frontend development</h2>
           {skillsFrontend.map((data) => {
             return (
-              <>
                 <section className={styles.skills_container} key={data.id}>
                   <div className={styles.skills_image}>
                     <SkillsProps image={data.image} name={data.name} />
@@ -20,7 +19,6 @@ function SkillsFrontend() {
                     <ProgressBar completed={data.level} />
                   </div>
                 </section>
-              </>
             );
           })}
         </div>
