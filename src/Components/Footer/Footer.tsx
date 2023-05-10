@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
 import Linkedin from "../Icons/Linkedin";
-import { GitHub } from "@mui/icons-material";
 import Github from "../Icons/Github";
 import Behance from "../Icons/Behance";
 import Instagram from "../Icons/Instagram";
