@@ -1,6 +1,5 @@
 body {
   overflow-x: hidden;
-  /* min-height: 100vh; */
   margin: 0 auto;
 }
 
@@ -8,7 +7,8 @@ h1,
 h2,
 h3,
 h4,
-h5 {
+h5,
+label {
   font-family: "Lato", sans-serif;
   font-weight: 300;
 }
@@ -25,7 +25,8 @@ a {
 }
 p {
   font-family: "Roboto Slab", serif;
-  font-weight: 100;
+  font-weight: 300;
+  line-height: 2;
 }
 
 body {
@@ -37,7 +38,8 @@ a:hover {
 }
 
 h1 {
-  font-size: 4.5rem;
+  font-size: 4.3rem;
+  color: #4d4d4d;
 }
 
 h4 {
@@ -63,6 +65,25 @@ button {
   position: fixed;
   z-index: 1;
 }
+
+input,
+textarea {
+  width: 30vw;
+  border-radius: 5px;
+  font-family: monospace;
+}
+
+input {
+  height: 2rem;
+}
+
+textarea {
+  height: 5rem;
+}
+
+/* input:invalid:focus {
+  border: 1px solid rgb(255, 51, 51);
+} */
 
 /* Media Queries */
 
@@ -95,5 +116,10 @@ button {
   .animation {
     justify-content: center;
     padding: 7.5rem 0 1rem 0;
+  }
+
+  input,
+  textarea {
+    width: 70vw;
   }
 }
