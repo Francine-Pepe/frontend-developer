@@ -28,8 +28,7 @@
   justify-content: center;
 }
 
-.projects_left,
-.projects_right {
+.projects_props {
   width: 30vw;
   height: fit-content;
   display: flex;
@@ -137,6 +136,8 @@ img:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+
   }
 
   .projects_left {
