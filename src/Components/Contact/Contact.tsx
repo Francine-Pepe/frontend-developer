@@ -2,7 +2,6 @@ import React from "react";
 import styles from "./Contact.module.css";
 import { ContactPage } from "../../data";
 import Envelope from "../Animations/Envelope";
-import ContactBackground from "../../Assets/Contact_bg.png";
 import ContactForm from "./ContactForm";
 
 function Contact() {
@@ -24,23 +23,7 @@ function Contact() {
       <section className={styles.contact_right_container}>
         <div className={styles.contact_form}>
           <ContactForm />
-        </div>
-        {/* <div className={styles.paper}>
-          <div className={styles.lines}>
-            <div className={styles.Lettertext} spellCheck="false">
-              <br />
-              <br />
-
-              <br />
-              <br />
-              <br />
-              <br />
-
-              <br />
-              <br />
-            </div>
-          </div>
-        </div> */}
+        </div>        
       </section>
     </main>
   );
