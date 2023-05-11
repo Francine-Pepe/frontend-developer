@@ -8,17 +8,15 @@ import Skills from "./Components/Skills/Skills";
 import Contact from "./Components/Contact/Contact";
 import Navbar from "./Components/Navbar/Navbar";
 import Footer from "./Components/Footer/Footer";
-// import Home from "./Components/Home/Home";
 import Project from "./Components/Projects/Project";
 import Resume from "./Components/Resume/Resume";
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Routes>
-          {/* <Route index path="/" element={<Home />} /> */}
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/project/:id" element={<Project />} />
