@@ -7,7 +7,8 @@ import styles from "./Navbar.module.css";
 import Hambuger from "../Icons/Hambuger";
 import CloseButton from "../Icons/CloseButton";
 
-const ITEM_HEIGHT = 80;
+const ITEM_HEIGHT = 100;
+const ITEM_WIDTH = 100;
 
 export default function NavbarMobile() {
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
@@ -45,13 +46,16 @@ export default function NavbarMobile() {
         PaperProps={{
           style: {
             maxHeight: ITEM_HEIGHT * 4.5,
-            minWidth: "100vw",
+            minWidth: ITEM_WIDTH,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "0.5rem",
+            marginTop: "1vh",
+            borderRadius: "0 0 5px 5px",
+            
           },
         }}
+        
       >
         <div className={styles.navbar_mobile}>
           <ul className={styles.list}>

@@ -199,7 +199,7 @@
   }
 
   .skills_main_tabs {
-    padding-top: 6rem;
+    padding-top: 8rem;
   }
 }
 
@@ -231,7 +231,7 @@
     justify-content: center;
   }
 
-  /* .skills_main_tabs {
+  .skills_main_tabs {
     padding-top: 10rem;
-  } */
+  }
 }
