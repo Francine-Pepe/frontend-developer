@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Contact.module.css";
 import { ContactPage } from "../../data";
-import Envelope from "../Animations/Envelope";
 import ContactForm from "./ContactForm";
 import TextReveal from "../Animations/TextRevealProps";
 

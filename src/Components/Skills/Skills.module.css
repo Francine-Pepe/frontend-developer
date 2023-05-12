@@ -139,7 +139,7 @@
 
 .skills_btn {
   width: 18vw;
-  background-color: #ff5f9e;
+  background-color: #b3005e;
   border: none;
   border-radius: 5px;
   color: #f0eeed;
@@ -149,7 +149,7 @@
 }
 
 .skills_btn:hover {
-  background-color: #b3005e;
+  background: rgb(255, 174, 174);
 }
 
 /* Media Queries */

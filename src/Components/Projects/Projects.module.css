@@ -7,7 +7,6 @@
 .project_transition_box {
   width: 100vw;
   height: 12rem;
-  /* background-image: url("../../Assets/Projects_bg.png"); */
   background-color: #ffffff;
   background-repeat: no-repeat;
   background-position: right;
@@ -33,7 +32,7 @@
   height: fit-content;
   display: flex;
   flex-direction: column;
-  padding: 2rem 5rem;
+  padding: 1rem 5rem;
 }
 
 .projects_left {
@@ -56,10 +55,17 @@ hr {
 
 .project_image_container_left hr {
   float: left;
+  left: 5%;
 }
 
 .project_image_container_right hr {
   float: right;
+  right: 5%;
+}
+
+.project_image_container_left hr,
+.project_image_container_right hr {
+  position: absolute;
 }
 
 .buttons_container {
@@ -70,7 +76,7 @@ hr {
 
 .buttons_container button {
   width: 7rem;
-  background-color: #ff5f9e;
+  background-color: #b3005e;
   border: none;
   border-radius: 5px;
   color: #f0eeed;
@@ -80,7 +86,7 @@ hr {
 }
 
 .buttons_container button:hover {
-  background-color: #b3005e;
+  background: rgb(255, 174, 174);
 }
 
 img {
@@ -125,19 +131,12 @@ img:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
-  .project_title {
-    padding-top: 3rem;
-  }
-}
-
 @media screen and (max-width: 618px) {
   .projects_container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
   }
 
   .projects_left {
@@ -169,5 +168,11 @@ img:hover {
   .buttons_container {
     display: flex;
     gap: 10px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project_title {
+    padding-top: 3rem;
   }
 }

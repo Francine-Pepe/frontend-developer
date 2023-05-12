@@ -51,7 +51,7 @@
 
 .contact_button {
   width: 7rem;
-  background-color: #ff5f9e;
+  background-color: #b3005e;
   border: none;
   border-radius: 5px;
   color: #f0eeed;
@@ -63,7 +63,7 @@
 }
 
 .contact_button:hover {
-  background-color: #b3005e;
+  background: rgb(255, 174, 174);
 }
 
 .contact_left_container img {
@@ -102,9 +102,9 @@
   }
 }
 
-@media screen and (max-width: 545px) {
+/* @media screen and (max-width: 545px) {
   .contact_left_container p,
   .contact_left_container h1 {
     padding: 0 2rem;
   }
-}
+} */

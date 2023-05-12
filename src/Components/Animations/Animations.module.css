@@ -17,13 +17,6 @@
 
 /* TextReveal animation CSS */
 
-/* Basic styles */
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
-} */
-
 :root {
   --bg-color: #d8d8d8;
 }

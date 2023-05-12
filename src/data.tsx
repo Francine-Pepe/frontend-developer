@@ -110,7 +110,7 @@ export const ProjectsDataLeft = [
   {
     id: 1,
     image: Project1,
-    name: "Fresh Fruit at your door",
+    name: "Fresh Fruit",
     route: "/project/freshfruit",
     visit: "https://francine-pepe.github.io/fresh-fruit-at-your-door/",
     repo: "https://github.com/Francine-Pepe/fresh-fruit-at-your-door",
@@ -702,10 +702,10 @@ export const CertificatedCourses = [
 export const ContactPage = [
   {
     title: "Contact",
-    text: "Did you enjoy my work and would like to hire me, or perhaps develop a personal project? Send me an e-mail and let´s talk. I am looking forward to it :) ",
+    text: "Did you enjoy my work and would like to hire me, or perhaps develop a personal project? Send me an e-mail and let´s talk. I am looking forward to it! You can reach me through the form.",
     link: "mailto:franmelopepe@gmail.com",
     image: Arrow,
-    
+    icon: <Icon icon="fxemoji:email" width="30" height="25" />,
   },
 ];
 
