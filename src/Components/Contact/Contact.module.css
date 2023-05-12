@@ -3,6 +3,7 @@
   width: 100;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow-x: hidden;
 }
 
@@ -13,7 +14,6 @@
 }
 
 .contact_right_container {
-  margin-top: 1.1rem;
   background-color: rgba(220, 120, 131, 0.09);
 }
 
@@ -66,6 +66,14 @@
   background-color: #b3005e;
 }
 
+.contact_left_container img {
+  width: 10vw;
+  height: auto;
+  position: relative;
+  left: 70%;
+  transform: rotate(-40deg);
+}
+
 /* Media Queries */
 
 @media screen and (max-width: 800px) {
@@ -83,6 +91,14 @@
 
   .contact_right_container {
     padding: 2rem;
+  }
+
+  .contact_left_container img {
+    width: v15w;
+    position: relative;
+    left: 45%;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1) rotate(40deg);
   }
 }
 

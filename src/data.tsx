@@ -24,6 +24,7 @@ import SkillsFrontend from "./Components/Skills/SkillsFrontend";
 import SkillsDesign from "./Components/Skills/SkillsDesign";
 import SkillsDevelopment from "./Components/Skills/SkillsDevelopment";
 import ProfilePicture from "./Assets/profile_picture.png";
+import Arrow from "./Assets/arrow.png";
 
 export const nav = [
   {
@@ -415,7 +416,7 @@ export const ResumeLinks = [
     id: 0,
     icon: <Icon icon="carbon:portfolio" color="white" width="20" height="20" />,
     name: "Portfolio",
-    link: "https://francine-pepe.github.io/portfolio-webdev/",
+    link: "https://francinemelopepe.de/",
   },
   {
     id: 1,
@@ -701,8 +702,10 @@ export const CertificatedCourses = [
 export const ContactPage = [
   {
     title: "Contact",
-    text: "Did you enjoy my work and would like to hire me, or perhaps develop a personal project? Send me an e-mail and let´s talk. Just click on the envelope, or use the form. I am looking forward to it :) ",
+    text: "Did you enjoy my work and would like to hire me, or perhaps develop a personal project? Send me an e-mail and let´s talk. I am looking forward to it :) ",
     link: "mailto:franmelopepe@gmail.com",
+    image: Arrow,
+    
   },
 ];
 

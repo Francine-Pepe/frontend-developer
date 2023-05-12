@@ -5,10 +5,13 @@ function ProjectAnimation(props: any) {
   const { text, image } = props;
 
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.typing_demo}>{text}</div>
-      <div>{image}</div>
-    </div>
+    <>
+      <div className={styles.wrapper}>
+        <div className={styles.typing_demo}>{text}</div>
+        <div>{image}</div>
+      </div>
+      
+    </>
   );
 }
 

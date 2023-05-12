@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./About.module.css";
 import { aboutText } from "../../data";
 import GridImages from "./GridImages";
+import TextRevealProps from "../Animations/TextRevealProps";
 
 function About() {
   return (
@@ -14,7 +15,7 @@ function About() {
           {aboutText.map((data, index) => {
             return (
               <div key={index}>
-                <h1>{data.title}</h1>
+                <TextRevealProps title={data.title} />
                 <p>{data.text}</p>
               </div>
             );

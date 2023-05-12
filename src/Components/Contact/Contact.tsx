@@ -3,6 +3,7 @@ import styles from "./Contact.module.css";
 import { ContactPage } from "../../data";
 import Envelope from "../Animations/Envelope";
 import ContactForm from "./ContactForm";
+import TextReveal from "../Animations/TextRevealProps";
 
 function Contact() {
   return (
@@ -10,20 +11,18 @@ function Contact() {
       {ContactPage.map((data, index) => {
         return (
           <section className={styles.contact_left_container} key={index}>
-            <h1>{data.title}</h1>
+            <TextReveal title={data.title} />
             <p>{data.text}</p>
-            <div className={styles.contact_animation}>
-              <a href={data.link}>
-                <Envelope />
-              </a>
-            </div>
+            <picture>
+              <img src={data.image} alt="/" />
+            </picture>
           </section>
         );
       })}
       <section className={styles.contact_right_container}>
         <div className={styles.contact_form}>
           <ContactForm />
-        </div>        
+        </div>
       </section>
     </main>
   );

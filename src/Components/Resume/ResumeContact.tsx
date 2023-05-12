@@ -10,7 +10,7 @@ function ResumeContact() {
         {ResumeData.map(({ image, name, title, contact }, index: any) => {
           return (
             <div className={styles.resume_contact} key={index}>
-              <img src={image} alt="" className={styles.profile_picture} />
+              <img src={image} alt="/" className={styles.profile_picture} />
               <div className={styles.profile_square}></div>
               <div className={styles.profile_information}>
                 <h2>{name}</h2>

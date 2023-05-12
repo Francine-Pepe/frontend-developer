@@ -52,10 +52,9 @@ export default function NavbarMobile() {
             justifyContent: "center",
             marginTop: "1vh",
             borderRadius: "0 0 5px 5px",
-            
+            overflowY: "scroll",
           },
         }}
-        
       >
         <div className={styles.navbar_mobile}>
           <ul className={styles.list}>

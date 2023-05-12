@@ -3,7 +3,7 @@
   height: auto;
   display: flex;
   overflow-x: hidden;
-  padding-top: 6rem;
+  padding-top: 5rem;
 }
 
 .caroussel_box,
@@ -16,6 +16,10 @@
   padding: 2rem;
 }
 
+.caroussel_box {
+  margin-top: 2rem;
+}
+
 .about_text_box {
   display: flex;
   flex-direction: column;
@@ -23,6 +27,7 @@
   background-color: rgba(220, 120, 131, 0.09);
   color: #4d4d4d;
   padding: 0 2rem;
+  margin-top: -1rem;
 }
 
 /* .about_text_box p {
@@ -91,15 +96,25 @@
 @media screen and (max-width: 1200px) {
   .about_container {
     flex-wrap: wrap-reverse;
-    padding-top: 0;
+    padding-top: 3rem;
   }
 
   .about_container h1 {
     padding-top: 3rem;
   }
 
+  .about_text_box {
+    padding: 2rem;
+  }
+
   .caroussel_box,
   .about_text_box {
     width: 100vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .about_container {
+    padding-top: 2rem;
   }
 }
