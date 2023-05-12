@@ -3,6 +3,7 @@
   height: auto;
   padding-top: 3.5rem;
   display: flex;
+  overflow-x: hidden;
 }
 
 .main_resume_mobile {

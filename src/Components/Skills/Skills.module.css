@@ -14,6 +14,7 @@
   background-position: top;
   height: auto;
   object-fit: cover;
+  overflow-x: hidden;
 }
 
 .skills_main_box {
