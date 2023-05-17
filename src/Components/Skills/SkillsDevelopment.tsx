@@ -8,7 +8,7 @@ function SkillsDevelopment() {
     <>
       <main className={styles.skills_main_box}>
         <div className={styles.skills}>
-          <h2>Development Tools</h2>
+          <h2>Architecture and Agile Methodology</h2>
           {skillsDevelopment.map((data) => {
             return (
                 <section className={styles.skills_container} key={data.id}>
