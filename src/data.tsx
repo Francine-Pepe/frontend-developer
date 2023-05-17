@@ -133,6 +133,7 @@ export const ProjectsDataLeft = [
     route: "/easybank",
     visit: "https://francine-pepe.github.io/easybank/",
     repo: "https://github.com/Francine-Pepe/easybank",
+    description: "Easybank is a code chalenge developed by: frontendmentor.io",
   },
 ];
 
@@ -144,6 +145,7 @@ export const ProjectsDataRight = [
     route: "/sunnyside",
     visit: "https://francine-pepe.github.io/sunnyside/",
     repo: "https://github.com/Francine-Pepe/sunnyside",
+    description: "Sunnyside is a code chalenge developed by: frontendmentor.io",
   },
   {
     id: 5,
@@ -152,6 +154,7 @@ export const ProjectsDataRight = [
     route: "/todolist",
     visit: "https://francine-pepe.github.io/todo/",
     repo: "https://github.com/Francine-Pepe/todo",
+    description: "Basic but useful Todo List.",
   },
   {
     id: 6,
@@ -160,6 +163,8 @@ export const ProjectsDataRight = [
     route: "/bespokefashion",
     visit: "https://bespokefashion.netlify.app/",
     repo: "https://github.com/Francine-Pepe/bespokefashion",
+    description:
+      "Final project from my Web development course. Here the customer will be able to choose the design, prints or colors.",
   },
 ];
 
@@ -309,37 +314,50 @@ export const skillsDesign = [
   },
   {
     id: 12,
-    image: <Icon icon="logos:trello" width="40" height="40" />,
+    image: <Icon icon="logos:github-icon" width="40" height="40" />,
     level: 70,
-    name: "Trello - Intermediate",
+    name: "Git / Github - Intermediate",
   },
   {
     id: 13,
-    image: <Icon icon="logos:slack-icon" width="40" height="40" />,
+    image: <Icon icon="vscode-icons:file-type-vscode" width="40" height="40" />,
     level: 70,
-    name: "Slack - Intermediate",
+    name: "VSCode - Intermediate",
   },
 ];
 
 export const skillsDevelopment = [
   {
     id: 14,
-    image: <Icon icon="logos:github-icon" width="40" height="40" />,
-    level: 70,
-    name: "Github - Intermediate",
+    image: <Icon icon="carbon:api-1" width="40" height="40" />,
+    level: 60,
+    name: "API Integration - Intermediate",
   },
   {
     id: 15,
-    image: <Icon icon="vscode-icons:file-type-vscode" width="40" height="40" />,
-    level: 70,
-    name: "VSCode - Intermediate",
+    image: <Icon icon="logos:contentful" width="40" height="40" />,
+    level: 60,
+    name: "Contentful - Intermediate",
   },
   {
     id: 16,
-    image: <Icon icon="carbon:api-1" width="40" height="40" />,
+    image: <Icon icon="logos:vercel" width="40" height="40" />,
     level: 60,
-    name: "API - Intermediate",
+    name: "Vercel - Intermediate",
   },
+  {
+    id: 17,
+    image: <Icon icon="logos:trello" width="40" height="40" />,
+    level: 70,
+    name: "Trello - Intermediate",
+  },
+  {
+    id: 18,
+    image: <Icon icon="logos:slack-icon" width="40" height="40" />,
+    level: 70,
+    name: "Slack - Intermediate",
+  },
+  
 ];
 
 export const Skills = [
@@ -347,10 +365,10 @@ export const Skills = [
     name: "Frontend Development",
   },
   {
-    name: "Design and Agile",
+    name: "Design and Dev Tools",
   },
   {
-    name: "Development Tools",
+    name: "Architecture and Agile",
   },
 ];
 
@@ -394,20 +412,8 @@ export const Contact = [
   {
     id: 1,
     icon: <Icon icon="mdi:email" color="white" width="20" height="20" />,
-    information: "franmelopepe2@gmail.com",
-    link: "mailto:franmelopepe2@gmail.com",
-  },
-  {
-    id: 2,
-    icon: (
-      <Icon
-        icon="openmoji:location-indicator-red"
-        color="white"
-        width="20"
-        height="20"
-      />
-    ),
-    information: "Bobergerstraße, 17 22111 - Hamburg",
+    information: "franmelopepe@gmail.com",
+    link: "mailto:franmelopepe@gmail.com",
   },
 ];
 
