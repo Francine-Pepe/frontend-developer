@@ -415,6 +415,12 @@ export const Contact = [
     information: "franmelopepe@gmail.com",
     link: "mailto:franmelopepe@gmail.com",
   },
+  {
+    id: 2,
+    icon: <Icon icon="dashicons:admin-site-alt3" color="white" width="20" height="20" />,
+    information: "francinemelopepe.de",
+    link: "https://www.francinemelopepe.de/",
+  },
 ];
 
 export const ResumeLinks = [
