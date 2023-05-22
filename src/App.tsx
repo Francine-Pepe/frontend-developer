@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import About from "./Components/About/About";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, Outlet } from "react-router-dom";
 import { Route, Routes } from "react-router";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
@@ -24,6 +24,7 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/resume" element={<Resume />} />
         </Routes>
+        <Outlet />
         <Footer />
       </BrowserRouter>
     </>
