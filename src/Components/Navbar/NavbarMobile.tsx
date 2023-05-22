@@ -45,26 +45,34 @@ export default function NavbarMobile() {
         onClose={handleClose}
         PaperProps={{
           style: {
-            maxHeight: ITEM_HEIGHT * 4.5,
+            minHeight: ITEM_HEIGHT * 4.5,
             minWidth: ITEM_WIDTH,
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            marginTop: "1vh",
             borderRadius: "0 0 5px 5px",
+            background: "#f8f8f8",
           },
         }}
       >
         <div className={styles.navbar_mobile}>
-          <ul className={styles.list}>
-            {nav.map((data) => {
-              return (
-                <NavLink to={data.link} key={data.index}>
-                  <li>{data.name}</li>
-                </NavLink>
-              );
-            })}
-          </ul>
+          <section className={styles.nav}>
+            <nav>
+              <ul className={styles.list}>
+                {nav.map((data) => {
+                  return (
+                    <NavLink
+                      to={data.link}
+                      key={data.index}
+                      className={styles.item}
+                    >
+                      <li className={styles.linktext}>{data.name}</li>
+                    </NavLink>
+                  );
+                })}
+              </ul>
+            </nav>
+          </section>
         </div>
       </Menu>
     </div>
