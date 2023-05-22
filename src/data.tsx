@@ -422,7 +422,7 @@ export const ResumeLinks = [
     id: 0,
     icon: <Icon icon="carbon:portfolio" color="white" width="20" height="20" />,
     name: "Portfolio",
-    link: "https://francinemelopepe.de/",
+    link: "https://www.francinemelopepe.de/",
   },
   {
     id: 1,
