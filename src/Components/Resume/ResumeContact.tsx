@@ -22,7 +22,7 @@ function ResumeContact() {
                   return (
                     <div className={styles.profile_data_contact} key={id}>
                       {icon}
-                      <a href={link}>
+                      <a href={link} target="_blank" rel="noreferrer noopener">
                         <h3 className={styles.information}>{information}</h3>
                       </a>
                     </div>
