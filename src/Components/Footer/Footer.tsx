@@ -18,7 +18,6 @@ function Footer() {
         <Github />
         <Behance />
         <Instagram />
-        <Resumé />
       </section>
       <section>
         <small>&copy; Copyright {getCurrentYear()} - Francine Pêpe</small>
