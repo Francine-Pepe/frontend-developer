@@ -58,12 +58,12 @@ button {
 
 .animation {
   width: 100vw;
-  height: 13vh;
+  height: 12vh;
   background-color: #ffffff;
   display: flex;
   align-items: center;
-  padding-top: 7.5rem;
-  padding-bottom: 2rem;
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
   position: fixed;
   z-index: 1;
 }
@@ -82,10 +82,6 @@ input {
 textarea {
   height: 5rem;
 }
-
-/* input:invalid:focus {
-  border: 1px solid rgb(255, 51, 51);
-} */
 
 /* Media Queries */
 
@@ -107,7 +103,7 @@ textarea {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   h1 {
     font-size: 2.5rem;
   }
@@ -119,6 +115,6 @@ textarea {
 
   input,
   textarea {
-    width: 70vw;
+    width: 90vw;
   }
 }
