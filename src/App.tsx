@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import About from "./Components/About/About";
-import { BrowserRouter, Outlet } from "react-router-dom";
+import { Outlet, HashRouter } from "react-router-dom";
 import { Route, Routes } from "react-router";
 import Projects from "./Components/Projects/Projects";
 import Skills from "./Components/Skills/Skills";
@@ -14,7 +14,7 @@ import Resume from "./Components/Resume/Resume";
 function App() {
   return (
     <>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <HashRouter basename={process.env.PUBLIC_URL}>
         <Navbar />
         <Routes>
           <Route path="/" element={<About />} />
@@ -26,7 +26,7 @@ function App() {
         </Routes>
         <Outlet />
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
