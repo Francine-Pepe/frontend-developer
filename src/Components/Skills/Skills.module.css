@@ -5,7 +5,7 @@
 }
 
 .skills_main {
-  padding: 2rem 0.5rem;
+  /* padding: 2rem 0.5rem; */
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -23,7 +23,7 @@
 }
 
 .skills_main_tabs {
-  padding-top: 8rem;
+  padding-top: 6rem;
 }
 
 .skills_image {
@@ -170,13 +170,13 @@
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .tab {
     padding: 0;
   }
 
   .skills_main_tabs {
-    padding-top: 10rem;
+    padding-top: 8rem;
   }
 
   .skills_btn {
@@ -233,6 +233,6 @@
   }
 
   .skills_main_tabs {
-    padding-top: 10rem;
+    padding-top: 5rem;
   }
 }
