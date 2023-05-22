@@ -1,5 +1,5 @@
 .paper_container {
-  padding-top: 5rem;
+  padding-top: 3rem;
   width: 100;
   display: flex;
   justify-content: center;
@@ -76,7 +76,7 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   .paper_container {
     display: flex;
     flex-wrap: wrap;
@@ -101,10 +101,3 @@
     transform: scaleX(-1) rotate(40deg);
   }
 }
-
-/* @media screen and (max-width: 545px) {
-  .contact_left_container p,
-  .contact_left_container h1 {
-    padding: 0 2rem;
-  }
-} */
