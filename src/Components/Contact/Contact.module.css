@@ -101,3 +101,10 @@
     transform: scaleX(-1) rotate(40deg);
   }
 }
+
+@media screen and (min-height: 704px) {
+  .contact_left_container,
+  .contact_right_container {
+    height: 73vh;
+  }
+}
