@@ -34,8 +34,8 @@ export const nav = [
   },
   {
     index: 1,
-    name: "projects",
-    link: "/projects",
+    name: "mockups",
+    link: "/mockups",
   },
   {
     index: 2,
@@ -57,7 +57,7 @@ export const nav = [
 export const aboutText = [
   {
     title: "About me",
-    text: "Hi, my name is Francine and I am a Frontend Developer! I am currently based in Hamburg, Germany, but I was born in Brazil. I have such a creative mind, and that is why I first worked as a Fashion Designer for almost 10 years. After moving to Germany, I felt like changing my career as well, but I still wanted to continue working creatively, so, here I am creating beautiful and functional Websites and Apps. I am passionate about Visual Design, colors, animation, photography - so, basically anything that involves a visual concept! On PROJECTS you will be able to see a little bit of my work, where I tried to give my best, and where I learned more and more about this world called Web Development :D. \nAt the moment I work with React JS, HTML 5, CSS 3, JavaScript, Typescript, Responsive design, Github, API´s and component libraries like Chakra UI, Material UI and Bootstrap.",
+    text: "Hi, my name is Francine and I am a Frontend Developer! I am currently based in Hamburg, Germany, but I was born in Brazil. I have such a creative mind, and that is why I first worked as a Fashion Designer for almost 10 years. After moving to Germany, I felt like changing my career as well, but I still wanted to continue working creatively, so, here I am creating beautiful and functional Websites and Apps. I am passionate about Visual Design, colors, animation, photography - so, basically anything that involves a visual concept! On MOCKUPS you will be able to see a little bit of my work, where I tried to give my best, and where I learned more and more about this world called Web Development :D. \nAt the moment I work with React JS, HTML 5, CSS 3, Sass, JavaScript, Typescript, Responsive design, Github, API´s and component libraries like Chakra UI, Material UI and Bootstrap.",
   },
 ];
 
@@ -231,12 +231,18 @@ export const skillsFrontend = [
   },
   {
     id: 3,
+    image: <Icon icon="logos:sass" width="40" height="40" />,
+    level: 60,
+    name: "Sass - Intermediate",
+  },
+  {
+    id: 4,
     image: <Icon icon="logos:javascript" width="40" height="40" />,
     level: 70,
     name: "JavaScript - Intermediate",
   },
   {
-    id: 4,
+    id: 5,
     image: (
       <Icon
         icon="vscode-icons:file-type-typescript-official"
@@ -248,7 +254,7 @@ export const skillsFrontend = [
     name: "Typescript - Basic",
   },
   {
-    id: 5,
+    id: 6,
     image: (
       <Icon icon="vscode-icons:file-type-reactjs" width="40" height="40" />
     ),
@@ -256,7 +262,7 @@ export const skillsFrontend = [
     name: "React - Advanced",
   },
   {
-    id: 6,
+    id: 7,
     image: (
       <Icon
         icon="simple-icons:chakraui"
@@ -269,7 +275,7 @@ export const skillsFrontend = [
     name: "Chakra UI - Advanced",
   },
   {
-    id: 7,
+    id: 8,
     image: (
       <Icon
         icon="skill-icons:materialui-light"
@@ -282,7 +288,7 @@ export const skillsFrontend = [
     name: "Material UI - Advanced",
   },
   {
-    id: 8,
+    id: 9,
     image: (
       <Icon icon="logos:bootstrap" color="#44c8c0" width="40" height="40" />
     ),
@@ -290,7 +296,7 @@ export const skillsFrontend = [
     name: "Bootstrap - Basic",
   },
   {
-    id: 9,
+    id: 10,
     image: (
       <Icon icon="mdi:responsive" color="#707070" width="40" height="40" />
     ),
@@ -465,51 +471,56 @@ export const TechSkills = [
   },
   {
     id: 2,
+    name: "Sass",
+    level: 60,
+  },
+  {
+    id: 3,
     name: "React.js",
     level: 80,
   },
   {
-    id: 3,
+    id: 4,
     name: "Vue.js",
     level: 40,
   },
   {
-    id: 4,
+    id: 5,
     name: "JavaScript",
     level: 70,
   },
   {
-    id: 5,
+    id: 6,
     name: "Responsive Design",
     level: 90,
   },
   {
-    id: 6,
+    id: 7,
     name: "Bootstrap",
     level: 50,
   },
   {
-    id: 7,
+    id: 8,
     name: "Material UI",
     level: 70,
   },
   {
-    id: 8,
+    id: 9,
     name: "Chakra UI",
     level: 70,
   },
   {
-    id: 9,
+    id: 10,
     name: "API",
     level: 60,
   },
   {
-    id: 10,
+    id: 11,
     name: "UI / UX",
     level: 60,
   },
   {
-    id: 11,
+    id: 12,
     name: "Git / Github",
     level: 70,
   },
