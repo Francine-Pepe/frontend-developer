@@ -655,7 +655,7 @@ export const Experience = [
 export const Education = [
   {
     id: 0,
-    icon: <Icon icon="fluent:card-ui-20-regular" width="40" height="40" />,
+    icon: <Icon icon="fluent:card-ui-20-regular" width="20" height="20" />,
     title: "UI/UX Design Intermediate",
     companyName: "ReDi School of Digital Integration - Hamburg - Germany",
     link: "https://www.redi-school.org/user-centered-design/hamburg/dcp/ux-ui-design-intermediate",
