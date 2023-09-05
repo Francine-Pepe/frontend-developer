@@ -314,18 +314,24 @@ export const skillsDesign = [
   },
   {
     id: 11,
+    image: <Icon icon="logos:figma" width="40" height="40" />,
+    level: 30,
+    name: "Figma - Basic",
+  },
+  {
+    id: 12,
     image: <Icon icon="logos:adobe-photoshop" width="40" height="40" />,
     level: 40,
     name: "Adobe Photoshop - Basic",
   },
   {
-    id: 12,
+    id: 13,
     image: <Icon icon="logos:github-icon" width="40" height="40" />,
     level: 70,
     name: "Git / Github - Intermediate",
   },
   {
-    id: 13,
+    id: 14,
     image: <Icon icon="vscode-icons:file-type-vscode" width="40" height="40" />,
     level: 70,
     name: "VSCode - Intermediate",
@@ -363,7 +369,12 @@ export const skillsDevelopment = [
     level: 70,
     name: "Slack - Intermediate",
   },
-  
+  {
+    id: 19,
+    image: <Icon icon="ic:outline-wordpress" width="40" height="40" />,
+    level: 70,
+    name: "WordPress Theme Development - Intermediate",
+  },
 ];
 
 export const Skills = [
@@ -423,7 +434,14 @@ export const Contact = [
   },
   {
     id: 2,
-    icon: <Icon icon="dashicons:admin-site-alt3" color="white" width="20" height="20" />,
+    icon: (
+      <Icon
+        icon="dashicons:admin-site-alt3"
+        color="white"
+        width="20"
+        height="20"
+      />
+    ),
     information: "francinemelopepe.de",
     link: "https://www.francinemelopepe.de/",
   },
@@ -481,8 +499,8 @@ export const TechSkills = [
   },
   {
     id: 4,
-    name: "Vue.js",
-    level: 40,
+    name: "WordPress Theme Development",
+    level: 70,
   },
   {
     id: 5,
@@ -534,11 +552,16 @@ export const DesignSkills = [
   },
   {
     id: 1,
+    name: "Figma",
+    level: 30,
+  },
+  {
+    id: 2,
     name: "Adobe Illustrator",
     level: 40,
   },
   {
-    id: 2,
+    id: 3,
     name: "Adobe Photoshop",
     level: 40,
   },
@@ -632,6 +655,16 @@ export const Experience = [
 export const Education = [
   {
     id: 0,
+    icon: <Icon icon="fluent:card-ui-20-regular" width="40" height="40" />,
+    title: "UI/UX Design Intermediate",
+    companyName: "ReDi School of Digital Integration - Hamburg - Germany",
+    link: "https://www.redi-school.org/user-centered-design/hamburg/dcp/ux-ui-design-intermediate",
+    period: "September 2023 - December 2023",
+    description:
+      "° User-Centered Design, Design Research, Conduct user research, Information architecture, Wireframes, Visual Design, Typography, Colors, High fidelity Prototyping, etc",
+  },
+  {
+    id: 1,
     icon: (
       <Icon
         icon="noto:laptop-computer"
@@ -648,7 +681,7 @@ export const Education = [
       "° Project-based, practice-orientated, remote, collaborative coding training.",
   },
   {
-    id: 1,
+    id: 2,
     icon: (
       <Icon
         icon="streamline:interface-edit-paint-color-colors-design-paint-painting-palette"
@@ -666,7 +699,7 @@ export const Education = [
   },
 
   {
-    id: 2,
+    id: 3,
     icon: (
       <Icon icon="noto-v1:womans-clothes" color="pink" width="20" height="20" />
     ),
