@@ -4,6 +4,7 @@ import Photo3 from "./Assets/Francine3.png";
 import Photo4 from "./Assets/Francine4.png";
 import Photo5 from "./Assets/WorkStation.png";
 import Photo6 from "./Assets/WorkStation2.png";
+import Project0 from "./Assets/00.DaSilvaFotografie.png";
 import Project1 from "./Assets/01.FreshFruit.png";
 import Project2 from "./Assets/02.ProjectBookmark.png";
 import Project3 from "./Assets/03.Easybank.png";
@@ -107,6 +108,16 @@ export const carouselImages = [
 ];
 
 export const ProjectsDataLeft = [
+  {
+    id: 0,
+    image: Project0,
+    name: "Da Silva Fotografie - Photography personal project",
+    route: "/project/dasilvafotografie",
+    visit: "https://francine-pepe.github.io/dasilva-fotografie/",
+    repo: "https://github.com/Francine-Pepe/dasilva-fotografie",
+    description:
+      "This is my personal Photography Website. All the images here displayed have a story, a feeling behind them. *Unauthorized copy*.",
+  },
   {
     id: 1,
     image: Project1,
