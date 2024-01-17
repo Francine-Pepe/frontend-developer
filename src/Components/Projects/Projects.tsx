@@ -31,6 +31,7 @@ function Projects() {
                     name={data.name}
                     visit={data.visit}
                     repo={data.repo}
+                    description={data.description}
                   />
                 </div>
               );
@@ -49,6 +50,7 @@ function Projects() {
                     name={data.name}
                     visit={data.visit}
                     repo={data.repo}
+                    description={data.description}
                   />
                 </div>
               );
