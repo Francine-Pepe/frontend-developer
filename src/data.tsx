@@ -26,6 +26,7 @@ import SkillsDesign from "./Components/Skills/SkillsDesign";
 import SkillsDevelopment from "./Components/Skills/SkillsDevelopment";
 import ProfilePicture from "./Assets/profile_picture.png";
 import Arrow from "./Assets/arrow.png";
+import ClientProject1 from "./Assets/07.AllCloudVideo.png";
 
 export const nav = [
   {
@@ -35,21 +36,26 @@ export const nav = [
   },
   {
     index: 1,
+    name: "projects",
+    link: "/projects",
+  },
+  {
+    index: 2,
     name: "mockups",
     link: "/mockups",
   },
   {
-    index: 2,
+    index: 3,
     name: "skills",
     link: "/skills",
   },
   {
-    index: 3,
+    index: 4,
     name: "contact",
     link: "/contact",
   },
   {
-    index: 4,
+    index: 5,
     name: "resume",
     link: "/resume",
   },
@@ -176,6 +182,19 @@ export const ProjectsDataRight = [
     repo: "https://github.com/Francine-Pepe/bespokefashion",
     description:
       "Final project from my Web development course. Here the customer will be able to choose the design, prints or colors.",
+  },
+];
+
+export const clientsProjects = [
+  {
+    id: 0,
+    image: ClientProject1,
+    name: "All Cloud Video",
+    route: "/allcloudvideo",
+    visit: "https://www.allcloudvideo.com/",
+    repo: "",
+    description:
+      "This company provides services and solutions for videos on the cloud.\nTech-stack: React - Typescript, Sass, Chakra UI, AWS Amplify (deployment).",
   },
 ];
 
