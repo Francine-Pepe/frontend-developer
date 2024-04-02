@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a4c0ccc3.css",
-    "main.js": "/static/js/main.c0552d4a.js",
+    "main.css": "/static/css/main.363a2a48.css",
+    "main.js": "/static/js/main.fdbb33fc.js",
     "static/js/787.ed337515.chunk.js": "/static/js/787.ed337515.chunk.js",
     "static/media/profile_picture.png": "/static/media/profile_picture.58cc465697fccc563a99.png",
     "static/media/Francine2.png": "/static/media/Francine2.7a121817e8f8cb33412a.png",
@@ -23,17 +23,18 @@
     "static/media/freshFruit03.png": "/static/media/freshFruit03.ab208b3c9d04f9bf43e7.png",
     "static/media/00.DaSilvaFotografie.png": "/static/media/00.DaSilvaFotografie.46bd596cba798a8b41f6.png",
     "static/media/06.BespokeFashion.png": "/static/media/06.BespokeFashion.edbfca412ec66be53054.png",
+    "static/media/07.AllCloudVideo.png": "/static/media/07.AllCloudVideo.49303508be88801b8e4b.png",
     "static/media/04.Sunnyside.png": "/static/media/04.Sunnyside.2659ba5916aca1ba76e2.png",
     "static/media/03.Easybank.png": "/static/media/03.Easybank.fd14478cb90d1189febd.png",
     "static/media/02.ProjectBookmark.png": "/static/media/02.ProjectBookmark.8ad286d6d43660d8ca1e.png",
     "static/media/05.TodoList.png": "/static/media/05.TodoList.05d1bfb01e2c56d061db.png",
     "index.html": "/index.html",
-    "main.a4c0ccc3.css.map": "/static/css/main.a4c0ccc3.css.map",
-    "main.c0552d4a.js.map": "/static/js/main.c0552d4a.js.map",
+    "main.363a2a48.css.map": "/static/css/main.363a2a48.css.map",
+    "main.fdbb33fc.js.map": "/static/js/main.fdbb33fc.js.map",
     "787.ed337515.chunk.js.map": "/static/js/787.ed337515.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a4c0ccc3.css",
-    "static/js/main.c0552d4a.js"
+    "static/css/main.363a2a48.css",
+    "static/js/main.fdbb33fc.js"
   ]
 }
