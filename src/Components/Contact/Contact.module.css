@@ -76,7 +76,7 @@
 
 /* Media Queries */
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1027px) {
   .paper_container {
     display: flex;
     flex-wrap: wrap;

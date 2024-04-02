@@ -116,7 +116,7 @@ li a:focus {
 /* Media queries */
 
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1027px) {
   .logo {
     max-width: 30vw;
   }
