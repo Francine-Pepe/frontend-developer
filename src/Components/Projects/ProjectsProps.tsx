@@ -26,7 +26,7 @@ function ProjectsProps(props: {
             <button>Repo</button>
           </a>
         </div>
-        <hr />
+        {/* <hr /> */}
       </section>
     </main>
   );
