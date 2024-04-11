@@ -103,7 +103,6 @@ img:hover {
 }
 
 .client_project_title {
-
   padding: 6rem 6rem 0 6rem;
 }
 
@@ -116,7 +115,8 @@ img:hover {
 /* Media Queries */
 
 @media screen and (max-width: 1200px) {
-  .project_title {
+  .project_title,
+  .client_project_title {
     padding-top: 6rem;
   }
 }
@@ -125,10 +125,18 @@ img:hover {
   .project_title {
     padding-top: 5rem;
   }
+
+  .client_project_title {
+    padding: 3rem 3rem 0 3rem;
+  }
+  .client_project_title h1 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
-  .project_title {
+  .project_title,
+  .client_project_title {
     padding-top: 4rem;
   }
 
@@ -182,7 +190,8 @@ img:hover {
 }
 
 @media screen and (max-width: 600px) {
-  .project_title {
+  .project_title,
+  .client_project_title {
     padding-top: 3rem;
   }
 }
