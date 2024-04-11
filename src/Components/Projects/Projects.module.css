@@ -132,6 +132,7 @@ img:hover {
   .client_project_title h1 {
     font-size: 1.5rem;
   }
+ 
 }
 
 @media screen and (max-width: 800px) {
@@ -187,6 +188,17 @@ img:hover {
     display: flex;
     gap: 10px;
   }
+
+  .projects_props {
+    width: 60vw;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .projects_props img {
+    width: 60vw;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -194,4 +206,6 @@ img:hover {
   .client_project_title {
     padding-top: 3rem;
   }
+
+  
 }
