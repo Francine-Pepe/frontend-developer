@@ -115,16 +115,6 @@ export const carouselImages = [
 
 export const ProjectsDataLeft = [
   {
-    id: 0,
-    image: Project0,
-    name: "Da Silva Fotografie - Photography personal project",
-    route: "/project/dasilvafotografie",
-    visit: "https://francine-pepe.github.io/dasilva-fotografie/",
-    repo: "https://github.com/Francine-Pepe/dasilva-fotografie",
-    description:
-      "This is my personal Photography Website. All the images here displayed have a story, a feeling behind them. *Unauthorized copy*.",
-  },
-  {
     id: 1,
     image: Project1,
     name: "Fresh Fruit",
@@ -195,6 +185,16 @@ export const clientsProjects = [
     repo: "",
     description:
       "This company provides services and solutions for videos on the cloud.\nTech-stack: React - Typescript, Sass, Chakra UI, AWS Amplify (deployment).",
+  },
+  {
+    id: 1,
+    image: Project0,
+    name: "Da Silva Fotografie - Photography personal project",
+    route: "/project/dasilvafotografie",
+    visit: "http://dasilvafotografie.de/",
+    repo: "https://github.com/Francine-Pepe/dasilva-fotografie",
+    description:
+      "This is my personal Photography Website. All the images here displayed have a story, a feeling behind them. *Unauthorized copy*.",
   },
 ];
 
