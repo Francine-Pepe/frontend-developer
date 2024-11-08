@@ -114,6 +114,17 @@ export const carouselImages = [
 ];
 
 export const ProjectsDataLeft = [
+  
+  {
+    id: 0,
+    image: Project0,
+    name: "California Coffeehouse",
+    route: "/project/californiacoffeehouse",
+    visit: "https://california-coffeehouse.vercel.app/",
+    repo: "https://github.com/Francine-Pepe/california-coffeehouse",
+    description:
+      "California Coffeehouse is a cozy Coffee shop, where you can relax and enjoy a hot cup of coffee and also have somethig delicous delicacies",
+  },
   {
     id: 1,
     image: Project1,
