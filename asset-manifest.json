@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.64e3082b.css",
-    "main.js": "/static/js/main.c7e187cc.js",
+    "main.js": "/static/js/main.df1b18a5.js",
     "static/js/787.ed337515.chunk.js": "/static/js/787.ed337515.chunk.js",
     "static/media/profile_picture.png": "/static/media/profile_picture.58cc465697fccc563a99.png",
     "static/media/Francine2.png": "/static/media/Francine2.7a121817e8f8cb33412a.png",
@@ -22,6 +22,7 @@
     "static/media/freshFruit06.png": "/static/media/freshFruit06.fbc250f47a5e1a9ac782.png",
     "static/media/freshFruit03.png": "/static/media/freshFruit03.ab208b3c9d04f9bf43e7.png",
     "static/media/00.DaSilvaFotografie.png": "/static/media/00.DaSilvaFotografie.46bd596cba798a8b41f6.png",
+    "static/media/08.CaliforniaCoffeehouse.png": "/static/media/08.CaliforniaCoffeehouse.12f30a4684bad9c35455.png",
     "static/media/06.BespokeFashion.png": "/static/media/06.BespokeFashion.edbfca412ec66be53054.png",
     "static/media/07.AllCloudVideo.png": "/static/media/07.AllCloudVideo.49303508be88801b8e4b.png",
     "static/media/04.Sunnyside.png": "/static/media/04.Sunnyside.2659ba5916aca1ba76e2.png",
@@ -30,11 +31,11 @@
     "static/media/05.TodoList.png": "/static/media/05.TodoList.05d1bfb01e2c56d061db.png",
     "index.html": "/index.html",
     "main.64e3082b.css.map": "/static/css/main.64e3082b.css.map",
-    "main.c7e187cc.js.map": "/static/js/main.c7e187cc.js.map",
+    "main.df1b18a5.js.map": "/static/js/main.df1b18a5.js.map",
     "787.ed337515.chunk.js.map": "/static/js/787.ed337515.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.64e3082b.css",
-    "static/js/main.c7e187cc.js"
+    "static/js/main.df1b18a5.js"
   ]
 }
