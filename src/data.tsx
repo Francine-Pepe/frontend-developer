@@ -11,6 +11,7 @@ import Project3 from "./Assets/03.Easybank.png";
 import Project4 from "./Assets/04.Sunnyside.png";
 import Project5 from "./Assets/05.TodoList.png";
 import Project6 from "./Assets/06.BespokeFashion.png";
+import Project8 from "./Assets/08.CaliforniaCoffeehouse.png";
 import FreshFruit01 from "./Assets/FreshFruit/freshFruit01.png";
 import FreshFruit02 from "./Assets/FreshFruit/freshFruit02.png";
 import FreshFruit03 from "./Assets/FreshFruit/freshFruit03.png";
@@ -114,10 +115,9 @@ export const carouselImages = [
 ];
 
 export const ProjectsDataLeft = [
-  
   {
     id: 0,
-    image: Project0,
+    image: Project8,
     name: "California Coffeehouse",
     route: "/project/californiacoffeehouse",
     visit: "https://california-coffeehouse.vercel.app/",
