@@ -207,6 +207,16 @@ export const clientsProjects = [
     description:
       "This is my personal Photography Website. All the images here displayed have a story, a feeling behind them. *Unauthorized copy*.",
   },
+  {
+    id: 2,
+    image: Project0,
+    name: "Da Silva Fotografie - Photography personal project",
+    route: "/project/dasilvafotografie",
+    visit: "https://juliana-antunes-advogada.vercel.app/",
+    repo: "https://github.com/Francine-Pepe/juliana-antunes-advogada",
+    description:
+      "Brazilian Lawyer Website - Developed and design by Francine Pêpe.\n* Just waiting for the client´s domain *",
+  },
 ];
 
 export const ProjectPage = [
