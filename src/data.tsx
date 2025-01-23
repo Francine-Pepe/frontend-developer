@@ -12,6 +12,7 @@ import Project4 from "./Assets/04.Sunnyside.png";
 import Project5 from "./Assets/05.TodoList.png";
 import Project6 from "./Assets/06.BespokeFashion.png";
 import Project8 from "./Assets/08.CaliforniaCoffeehouse.png";
+import Project9 from "./Assets/Juliana-screenshot.png";
 import FreshFruit01 from "./Assets/FreshFruit/freshFruit01.png";
 import FreshFruit02 from "./Assets/FreshFruit/freshFruit02.png";
 import FreshFruit03 from "./Assets/FreshFruit/freshFruit03.png";
@@ -209,9 +210,9 @@ export const clientsProjects = [
   },
   {
     id: 2,
-    image: Project0,
-    name: "Da Silva Fotografie - Photography personal project",
-    route: "/project/dasilvafotografie",
+    image: Project9,
+    name: "Dra. Juliana Antunes - Advogada",
+    route: "",
     visit: "https://juliana-antunes-advogada.vercel.app/",
     repo: "https://github.com/Francine-Pepe/juliana-antunes-advogada",
     description:
