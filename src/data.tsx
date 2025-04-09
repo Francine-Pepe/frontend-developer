@@ -13,6 +13,7 @@ import Project5 from "./Assets/05.TodoList.png";
 import Project6 from "./Assets/06.BespokeFashion.png";
 import Project8 from "./Assets/08.CaliforniaCoffeehouse.png";
 import Project9 from "./Assets/Juliana-screenshot.png";
+import Project10 from "./Assets/09.Rafa-brandao.png";
 import FreshFruit01 from "./Assets/FreshFruit/freshFruit01.png";
 import FreshFruit02 from "./Assets/FreshFruit/freshFruit02.png";
 import FreshFruit03 from "./Assets/FreshFruit/freshFruit03.png";
@@ -189,14 +190,24 @@ export const ProjectsDataRight = [
 
 export const clientsProjects = [
   {
-    id: 0,
-    image: ClientProject1,
-    name: "All Cloud Video",
-    route: "/allcloudvideo",
-    visit: "https://www.allcloudvideo.com/",
-    repo: "",
+    id: 1,
+    image: Project10,
+    name: "Rafa Brandão",
+    route: "",
+    visit: "https://www.rafa-brandao.com/",
+    repo: "https://github.com/Francine-Pepe/rafael-brandao-sanity",
     description:
-      "This company provides services and solutions for videos on the cloud.\nTech-stack: React - Typescript, Sass, Chakra UI, AWS Amplify (deployment).",
+      "The website rafa-brandao.com showcases the work of Rafa Brandão, a Brazilian singer and composer. As an independent musician, Brandão has collaborated with various Brazilian and international artists and has performed as a vocalist in multiple bands. Professionally, Brandão emphasizes his extensive experience in the music industry, highlighting his roles as a singer and composer. The website serves as a portfolio of his musical career and projects.",
+  },
+  {
+    id: 2,
+    image: Project9,
+    name: "Dra. Juliana Antunes - Advogada",
+    route: "",
+    visit: "https://juliana-antunes-advogada.vercel.app/",
+    repo: "https://github.com/Francine-Pepe/juliana-antunes-advogada",
+    description:
+      "This is dedicated to Dra. Juliana Antunes, a Brazilian lawyer specializing in labor law, contracts, and compliance. She offers strategic defense in hearings and serves as a conciliator for the Rio de Janeiro Court of Justice. Dra. Antunes shares legal insights and professional updates on her Instagram account @jv.advogada. ",
   },
   {
     id: 1,
@@ -208,15 +219,16 @@ export const clientsProjects = [
     description:
       "This is my personal Photography Website. All the images here displayed have a story, a feeling behind them. *Unauthorized copy*.",
   },
+
   {
-    id: 2,
-    image: Project9,
-    name: "Dra. Juliana Antunes - Advogada",
-    route: "",
-    visit: "https://juliana-antunes-advogada.vercel.app/",
-    repo: "https://github.com/Francine-Pepe/juliana-antunes-advogada",
+    id: 0,
+    image: ClientProject1,
+    name: "All Cloud Video",
+    route: "/allcloudvideo",
+    visit: "https://www.allcloudvideo.com/",
+    repo: "",
     description:
-      "Brazilian Lawyer Website - Developed and design by Francine Pêpe.\n* Just waiting for the client´s domain *",
+      "AllCloud Video is a platform designed to help users manage and distribute video content using cloud technology. It offers tools for video hosting, streaming, and analytics, enabling organizations to efficiently deliver video content to their audiences. The platform emphasizes scalability and accessibility, allowing users to reach viewers across various devices and locations.",
   },
 ];
 
