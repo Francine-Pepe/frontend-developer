@@ -10,6 +10,7 @@ function ClientsProjects() {
           On this page you will find my latest work as a Freelancer. Everything
           was done from scratch: design, code and deployment.
         </h1>
+        <hr />
       </div>
       <section className={styles.projects_container}>
         {clientsProjects.map(

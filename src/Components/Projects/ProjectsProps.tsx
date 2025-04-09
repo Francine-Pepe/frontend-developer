@@ -11,7 +11,7 @@ function ProjectsProps(props: {
 }) {
   const { id, image, name, visit, repo, description } = props;
   return (
-    <main>
+    <main className={styles.projects_main_container}>
       <section className={styles.projects_props}>
         <h3>{name}</h3>
         <a href={visit} target="_blank" rel="noreferrer">

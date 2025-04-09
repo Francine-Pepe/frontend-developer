@@ -17,45 +17,47 @@ function Projects() {
             <Animation text={text.text} />
           </div>
         </section>
-        <section className={styles.projects_container}>
-          <div className={styles.projects_left}>
-            {ProjectsDataLeft.map((data, index) => {
-              return (
-                <div
-                  className={styles.project_image_container_left}
-                  key={index}
-                >
-                  <ProjectsProps
-                    id={data.id}
-                    image={data.image}
-                    name={data.name}
-                    visit={data.visit}
-                    repo={data.repo}
-                    description={data.description}
-                  />
-                </div>
-              );
-            })}
-          </div>
-          <div className={styles.projects_right}>
-            {ProjectsDataRight.map((data, index) => {
-              return (
-                <div
-                  className={styles.project_image_container_right}
-                  key={index}
-                >
-                  <ProjectsProps
-                    id={data.id}
-                    image={data.image}
-                    name={data.name}
-                    visit={data.visit}
-                    repo={data.repo}
-                    description={data.description}
-                  />
-                </div>
-              );
-            })}
-          </div>
+        <section className={styles.projects_main_container}>
+          <section className={styles.projects_container}>
+            <div className={styles.projects_left}>
+              {ProjectsDataLeft.map((data, index) => {
+                return (
+                  <div
+                    className={styles.project_image_container_left}
+                    key={index}
+                  >
+                    <ProjectsProps
+                      id={data.id}
+                      image={data.image}
+                      name={data.name}
+                      visit={data.visit}
+                      repo={data.repo}
+                      description={data.description}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+            <div className={styles.projects_right}>
+              {ProjectsDataRight.map((data, index) => {
+                return (
+                  <div
+                    className={styles.project_image_container_right}
+                    key={index}
+                  >
+                    <ProjectsProps
+                      id={data.id}
+                      image={data.image}
+                      name={data.name}
+                      visit={data.visit}
+                      repo={data.repo}
+                      description={data.description}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          </section>
         </section>
       </main>
     </>
