@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5ec297ce.css",
-    "main.js": "/static/js/main.a739e1f5.js",
+    "main.js": "/static/js/main.9742c294.js",
     "static/js/787.ed337515.chunk.js": "/static/js/787.ed337515.chunk.js",
     "static/media/profile_picture.png": "/static/media/profile_picture.58cc465697fccc563a99.png",
     "static/media/Francine2.png": "/static/media/Francine2.7a121817e8f8cb33412a.png",
@@ -26,17 +26,18 @@
     "static/media/Juliana-screenshot.png": "/static/media/Juliana-screenshot.27612435a67a2101f136.png",
     "static/media/06.BespokeFashion.png": "/static/media/06.BespokeFashion.edbfca412ec66be53054.png",
     "static/media/07.AllCloudVideo.png": "/static/media/07.AllCloudVideo.49303508be88801b8e4b.png",
+    "static/media/09.Rafa-brandao.png": "/static/media/09.Rafa-brandao.495f7ff4add16bca280e.png",
     "static/media/04.Sunnyside.png": "/static/media/04.Sunnyside.2659ba5916aca1ba76e2.png",
     "static/media/03.Easybank.png": "/static/media/03.Easybank.fd14478cb90d1189febd.png",
     "static/media/02.ProjectBookmark.png": "/static/media/02.ProjectBookmark.8ad286d6d43660d8ca1e.png",
     "static/media/05.TodoList.png": "/static/media/05.TodoList.05d1bfb01e2c56d061db.png",
     "index.html": "/index.html",
     "main.5ec297ce.css.map": "/static/css/main.5ec297ce.css.map",
-    "main.a739e1f5.js.map": "/static/js/main.a739e1f5.js.map",
+    "main.9742c294.js.map": "/static/js/main.9742c294.js.map",
     "787.ed337515.chunk.js.map": "/static/js/787.ed337515.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5ec297ce.css",
-    "static/js/main.a739e1f5.js"
+    "static/js/main.9742c294.js"
   ]
 }
